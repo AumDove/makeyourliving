@@ -17,7 +17,7 @@
 get_header(); ?>
 
 <section class="index-page">		
-	<div class="main-content">
+	<div class="main-content main-laptop main-desktop">
 		<h1 id="mobile-blog-header">Read the Latest...</h1>
 		<?php if ( have_posts() ): ?>
 			<?php while ( have_posts() ) : the_post(); ?>
