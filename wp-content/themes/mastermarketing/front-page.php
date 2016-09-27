@@ -14,9 +14,9 @@ get_header(); ?>
 		<div class="content ">
 			<?php while ( have_posts() ): the_post(); ?>
 			<h1><?php the_title(); ?></h1>
-				<a id="mobile-btn" href="<?php echo site_url('/blog/'); ?>" class="btn">View My Blog</a>
+				<a id="mobile-btn" href="<?php echo site_url('/blog/'); ?>" class="btn">Check Out Our Blog</a>
 				<?php the_content(); ?>
-				<a id="desk-lap" href="<?php echo site_url('/blog/'); ?>" class="btn">View My Blog</a>
+				<a id="desk-lap" href="<?php echo site_url('/blog/'); ?>" class="btn">Check Out Our Blog</a>
 			<?php endwhile; ?>
 		</div>
 	</div>
