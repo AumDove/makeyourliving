@@ -2,7 +2,7 @@
 	<div class="entry-wrap">
 		<header class="entry-header">
 			<div class="entry-meta">
-				<h3 class="entry-time"><?php the_date(); ?></h3>
+				<h3 class="entry-time blog-page post"><?php the_date(); ?></h3>
 			</div>
 			<h2 class="entry-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 		</header>
