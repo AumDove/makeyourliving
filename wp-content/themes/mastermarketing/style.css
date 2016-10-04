@@ -309,15 +309,11 @@ div.wp-caption .alignnone {
 	width:95%;
 	height:auto;
 } 
-h3.blog-page{
-	display:none;
-}
-.post {
-	display:inline-block;
+h3.entry-time {
 	color:#302CA8;
 	font-weight:bold;
 	font-size:1rem;
-	padding-top:10%;
+	padding-top:5%;
 }
 div.entry-meta {
 	border:none;
@@ -413,54 +409,6 @@ div[style] {
 .back span a{
 	clear:both;
 }
-/* Older and New Posts Nav */
-div#navigation.container{
-	border:none;
-}
-#navigation {
-	background: #fff;
-	border: solid #bfbfbf;
-	border-width: 1px 0;
-	clear: both;
-	font: 0.8em/4.08 'OpenSans', Arial, sans-serif;
-	overflow: hidden;
-	position: relative;
-	z-index: 1;
-	margin-bottom: 40px;
-	text-align: center;
-}
-#navigation .left {
-	float: left;
-}
-#navigation .right {
-	float: right;
-}
-#navigation .left a,
-#navigation .right a {
-	color: #302CA8;
-	text-decoration: none;
-	font-weight: 600;
-	text-transform: uppercase;
-}
-#navigation .left a span,
-#navigation .right a span {
-	color: #302CA8;
-}
-#navigation .left a span {
-	padding-left: 8px;
-}
-#navigation .right a span {
-	padding-right: 8px;
-}
-#navigation .left a:hover,
-#navigation .right a:hover {
-	text-decoration: none;
-}
-#navigation .left a:hover span,
-#navigation .right a:hover span {
-	text-decoration: underline;
-}
-/* End next / prev */
 /* SIDEBAR **************************** */
 #sidebar {
 	width:96%;
