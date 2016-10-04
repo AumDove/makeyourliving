@@ -39,7 +39,8 @@
 /wp-config-local.php
 /wp-config-staging.php
 #/wp-config.php
-
+/wp-config.php
+/web.config
 
 # wp-content (covers backup/cache stuff)
 # -------------------------------------
