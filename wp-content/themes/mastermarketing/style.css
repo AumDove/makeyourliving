@@ -210,7 +210,7 @@ footer.home-page-footer {
 	border:none;
 	padding-bottom:30px;
 	margin:0 auto;
-	/* padding-left:0; */
+	padding-left:0; 
 }
 #page {
 	width: 98%;
@@ -327,11 +327,12 @@ div.entry-meta {
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
-h2.entry-title {
+h2.entry-title{
 	margin: 1em 0;
 	color:#302CA8;
 	font: bold 1.47em/1.4 'Montserrat', sans-serif;
 	letter-spacing: -0.034em;
+	padding-left:0;
 }
 .entry-title, .single {
 	border:0;
@@ -344,10 +345,15 @@ h2.entry-title {
 .entry-title a:hover {
 	color: #5D70FF;
 }
-h3.entry-time {
+.entry-time {
+	display:none;
+}
+.entry-time#single-post{
 	color: #302CA8;
+	display:block;
 	font-weight: 600;
 	font-size: 1rem;
+	padding-top:1%;
 }
 .entry-summary p{
 	max-width:95%;
@@ -391,6 +397,10 @@ div[style] {
 }
 .post-entry {
 	margin:0;
+}
+.post-entry h3{
+	font-weight:bold;
+	font-size:1.1rem;
 }
 .post-entry .read-more {
 	color: #150300;
@@ -892,4 +902,10 @@ div.policy-other .page-header .main-content {
 		display:none;
 	}
 
+}
+/* POLICY / OTHER PAGES (DESKTOP) ************************************* */
+
+.policy-other{
+	width:65%;
+	padding-right:3%;
 }

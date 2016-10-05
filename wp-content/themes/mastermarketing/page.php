@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <section id="policy-other" class="default-page">		
-	<div class="main-content">
+	<div class="main-content policy-other">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<article class="post-entry">
