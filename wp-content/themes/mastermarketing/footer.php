@@ -12,10 +12,10 @@
 	<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 		<nav role="navigation" class="navigation site-navigation secondary-navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
-			
+			 
 			</nav>
 	<?php endif; ?>
-
+		<p id="meg">&copy; Meg Miller</p>
 		</div><!-- #main -->
 	</div><!-- #page -->
 

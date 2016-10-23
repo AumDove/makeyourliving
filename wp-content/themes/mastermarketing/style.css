@@ -206,6 +206,12 @@ footer.page-footer ul {
 footer.home-page-footer {
 	display:none;
 }
+footer p#meg{
+	display:inline-block;
+	font-size:.8rem;
+	font-weight:bold;
+}
+}
  #policy-other h2.entry-title{
 	border:none;
 	padding-bottom:30px;
@@ -619,6 +625,7 @@ div.back span {
 div.back.mobile span {
 	display:none;
 }
+
 /* Policy / Other Pages ********************************* */
 div.policy-other .page-header .main-content {
 	width:100%;
