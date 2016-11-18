@@ -142,17 +142,7 @@ function meg_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'meg_scripts' );
 
-add_action( 'loop_start', 'using_front_page_conditional_tag' );
-function using_front_page_conditional_tag() {
-if ( is_front_page() ) {	
-	echo'<style>.site-header {
-                        width: 100vw;
-                        height: 100vh;
-                        background-size: cover;
-                        background-position-x: 30%;
-                    }</style>';
-    }
-}
+
 /**
  * Implement the Custom Header feature.
  */

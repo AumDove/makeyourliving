@@ -50,26 +50,24 @@
 			</a>
 		</div>
             
-                <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?>>
+                <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?> >
 			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			if ( is_front_page()) : ?>
+                        <div class="full-header">
+                            <p id="front-decoration">Hello world,</p>
+                        </div>        
+			
+                        <?php else : ?>
+                    <div class="reduced-header">
+                        
+                    </div>
 			<?php
 			endif;
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
+		?>	
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'meg' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
