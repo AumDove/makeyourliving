@@ -28,13 +28,16 @@
             <?php } else { ?>
                 <header id="masthead" class="site-header" role="banner">
             <?php } ?>
-                        
+            
+                       
+          
+          
                <?php // Display site icon or first letter as logo ?>	
 		<div class="site-logo">
 			<?php $site_title = get_bloginfo( 'name' ); ?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<div class="screen-reader-text">
-					<?php printf( esc_html__('Go to the home page of %1$s', 'popperscores'), $site_title ); ?>	
+					<?php printf( esc_html__('Go to the home page of %1$s', 'meg'), $site_title ); ?>	
 				</div>
 				<?php
 				if ( has_custom_logo() ) {
@@ -47,7 +50,7 @@
 			</a>
 		</div>
             
-                <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?>">
+                <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?>>
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
