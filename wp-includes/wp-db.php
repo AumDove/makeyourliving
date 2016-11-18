@@ -815,7 +815,7 @@ class wpdb {
 
 			if ( $this->use_mysqli ) {
 				if ( function_exists( 'mysqli_set_charset' ) && $this->has_cap( 'set_charset' ) ) {
-					$set_charset_succeeded = mysqli_set_charset( $dbh, $charset );
+					//$set_charset_succeeded = mysqli_set_charset( $dbh, $charset );
 				}
 
 				if ( $set_charset_succeeded ) {
