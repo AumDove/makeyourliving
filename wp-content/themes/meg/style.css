@@ -810,22 +810,65 @@ a:active {
     height: 100vh;
     background-size: cover;
     background-position-x: 30%;
-    
 }
-
-.reduced-header {
-    height: 3.5em;
-}
+/*@media screen and (max-height:480px){
+    .full-header {
+        height: 125vh;
+    }
+}*/
 p#front-decoration {
     color:lightgray;
     font-family:'Courier New', sans-serif;
 }
+h1#hero-text {
+    font-family:'Economica', sans-serif;
+    font-weight: 500;
+    color: #02FF57;
+    font-size:50px;
+    margin-top:.5em;
+    margin-bottom:.5em;
+    letter-spacing:.05em;
+    text-shadow: 5px 5px #000000;
+}
+@media screen and (max-height:480px) {
+    h1#hero-text {
+        font-size:42px;
+    }
+}
+img#headshot-image {
+    width: 10em;
+    height: 10em;
+    border-radius:50%;
+}
+@media screen and (max-height:480px) {
+    img#headshot-image {
+        width: 7em;
+        height: 7em;
+        border-radius:50%;
+    }
+}
 
+p#full-hero-text {
+    color:lightgray;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:1.1rem;
+    margin:1em 1.25em;
+    text-shadow: 2px 2px #000000;
+}
+@media screen and (max-height:480px) {
+    p#full-hero-text {
+        font-size:1rem;
+    }
+}
+.reduced-header {
+    height: 3.5em;
+}
 @media screen and (min-width: 50em) {
     .site-header {
         min-height: 4em;
     }
 }
+/* Begin Logo Styles */
 
 .site-logo {
 	position: relative;

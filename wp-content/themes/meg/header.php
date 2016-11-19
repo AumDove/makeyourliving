@@ -55,9 +55,13 @@
 			if ( is_front_page()) : ?>
                         <div class="full-header">
                             <p id="front-decoration">Hello world,</p>
+                            
                             <h1 id="hero-text">I&apos;m Meg ...</h1>
-                            <img src="img/hookipa-bird.jpg" id="headshot-image"/>
-                            <p id="full-hero-text">I build functional, simple websites for people who need to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. </p>
+                            
+                            <img id="headshot-image" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/>
+                            
+                            <p id="full-hero-text">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p>
+                            
                             <button id="button-one">I am a button 1</button>
                             <button id="button-two">I am a button 2</button>
                         </div>        
