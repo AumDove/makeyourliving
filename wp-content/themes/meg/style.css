@@ -802,7 +802,7 @@ a:active {
     background-color: #000; 
     background-size:cover;
 }
-.site-branding {
+.flex-container {
     display:flex;
 }
 .full-header {
@@ -817,7 +817,10 @@ a:active {
 p#front-decoration {
     color:lightgray;
     font-family:'Courier New', sans-serif;
-    
+    align-self:flex-end;
+    margin-right:1.25em;
+    margin-top: 1.25em;
+    margin-bottom:.05em;
 }
 h1#hero-text {
     font-family:'Economica', sans-serif;
@@ -832,13 +835,15 @@ h1#hero-text {
 @media screen and (max-height:480px) {
     h1#hero-text {
         font-size:42px;
+        margin-top:.5em;
+        margin-bottom:.5em;
     }
 }
 img#headshot-image {
     width: 10em;
     height: 10em;
     border-radius:50%;
-    align-content:center;
+/*    align-content:center;*/
 }
 @media screen and (max-height:480px) {
     img#headshot-image {
@@ -852,7 +857,7 @@ p#full-hero-text {
     color:lightgray;
     font-family: 'Fira Sans', sans-serif;
     font-size:1.1rem;
-    margin:1em 1.25em;
+    margin:1.25em 1.25em;
     text-shadow: 2px 2px #000000;
 }
 @media screen and (max-height:480px) {
@@ -860,11 +865,21 @@ p#full-hero-text {
         font-size:1rem;
     }
 }
+.flex-container-nav {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
 .nav-button {
     background-color: #02FF57;
     color: #004459;
     border:0;
+    flex-direction:row;
     justify-content: space-around;
+    margin:0 2em;
+    font-size:.75em;
+    font-weight:bold;
+    width:8em;
 }
 /* Begin Reduced Header Styles for anything but Front Page*/
 .reduced-header {

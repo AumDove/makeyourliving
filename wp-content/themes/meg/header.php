@@ -31,7 +31,7 @@
             
                        
           
-          
+            <div class="flex-container">        
                <?php // Display site icon or first letter as logo ?>	
 		<div class="site-logo">
 			<?php $site_title = get_bloginfo( 'name' ); ?>
@@ -61,10 +61,14 @@
                             <img id="headshot-image" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/>
                             
                             <p id="full-hero-text">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p>
-                            
-                            <button id="button-one" class="nav-button">I am a button 1</button>
-                            <button id="button-two" class="nav-button">I am a button 2</button>
-                        </div>        
+                        
+                            <div class="flex-container-nav">    
+                                <button id="button-one" class="nav-button">Blog</button>
+                                <button id="button-two" class="nav-button">Contact</button>
+                            </div>
+                        </div>       
+                        
+                             
 			
                         <?php else : ?>
                     <div class="reduced-header">
@@ -76,7 +80,7 @@
 		?>	
 		</div><!-- .site-branding -->
 
-		
+            </div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
