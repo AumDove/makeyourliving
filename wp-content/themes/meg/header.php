@@ -62,8 +62,8 @@
                             
                             <p id="full-hero-text">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p>
                             
-                            <button id="button-one">I am a button 1</button>
-                            <button id="button-two">I am a button 2</button>
+                            <button id="button-one" class="nav-button">I am a button 1</button>
+                            <button id="button-two" class="nav-button">I am a button 2</button>
                         </div>        
 			
                         <?php else : ?>
