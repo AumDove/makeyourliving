@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 20, 2016, 5:04:48 PM
+    Author     : dozyd
+*/
+/*iPhone 4 Header */
+@media screen and (max-height:480px){
+    
+}
+/*iPhone 5 Header */
+@media screen and (min-height:568px){
+    h1#hero-text {
+        font-size:50px;
+    }
+    img#headshot-image {
+        width: 10em;
+        height: 10em;
+    }
+    .nav-button {
+        background-color: #02FF57;
+        color: #004459;
+        border:0;
+        flex-direction:row;
+        justify-content: space-around;
+        margin:0 2em;
+        font-size:.75em;
+        font-weight:bold;
+        width:9em;
+        height:3em;
+        
+    }
+}
+/*iPhone 4 & 5 Landscape Header */
+@media screen and (max-height:320px){
+    flex-container {
+        position:relative;
+    }
+    p#front-decoration {
+        order:1;
+        align-self:center;
+        margin-right:0;
+        margin-top:.5em;
+        font-size:22px;
+    }
+    h1#hero-text {
+        order:2;
+        align-self:flex-start;
+        font-size:50px;
+        position:absolute;
+        margin-top:4.5rem;
+        margin-bottom:1rem;
+        margin-left:1.15rem;
+    }
+    
+    p#full-hero-text {
+        order:2;
+        width: 65%;
+        align-self:flex-start;
+        font-size:1rem;
+        margin-top: 10rem;
+        margin-left:0;
+        padding:.25em;
+        position:absolute;
+        
+    }
+    .flex-container-nav {
+        order:3;
+        flex-direction:column;
+        align-self:flex-end;  
+        justify-content: space-between;
+        margin-right:1.5em;
+    }
+    img#headshot-image {
+        order:1;
+        align-self:flex-end;
+        width:7em;
+        height:7em;
+        margin-top:2rem;
+        margin-bottom:.5em;
+        margin-right:1.5em;
+    }
+    .nav-button{
+        margin:1em;
+
+    }
+}
+/*iPhone 6 Header */
+@media screen and (min-height:667px){
+    
+}
+
+@media screen and (height:375px){
+    
+}
+/*iPhone 6 PlusHeader */
+@media screen and (min-height:730px){
+    
+}
+
+@media screen and (min-height:410px){
+    
+}
+
