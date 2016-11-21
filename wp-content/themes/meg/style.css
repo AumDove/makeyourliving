@@ -804,6 +804,7 @@ a:active {
 }
 .flex-container {
     display:flex;
+    
 }
 .full-header {
     width: 100vw;
@@ -826,32 +827,19 @@ h1#hero-text {
     font-family:'Economica', sans-serif;
     font-weight: 500;
     color: #02FF57;
-    font-size:50px;
-    margin-top:.5em;
+    font-size:36px;
+    margin-top:.25em;
     margin-bottom:.5em;
     letter-spacing:.05em;
     text-shadow: 5px 5px #000000;
 }
-@media screen and (max-height:480px) {
-    h1#hero-text {
-        font-size:42px;
-        margin-top:.5em;
-        margin-bottom:.5em;
-    }
-}
+
 img#headshot-image {
-    width: 10em;
-    height: 10em;
+    width: 7em;
+    height: 7em;
     border-radius:50%;
-/*    align-content:center;*/
 }
-@media screen and (max-height:480px) {
-    img#headshot-image {
-        width: 7em;
-        height: 7em;
-        border-radius:50%;
-    }
-}
+
 
 p#full-hero-text {
     color:lightgray;
@@ -860,11 +848,7 @@ p#full-hero-text {
     margin:1.25em 1.25em;
     text-shadow: 2px 2px #000000;
 }
-@media screen and (max-height:480px) {
-    p#full-hero-text {
-        font-size:1rem;
-    }
-}
+
 .flex-container-nav {
     display:flex;
     flex-direction:row;
@@ -880,6 +864,7 @@ p#full-hero-text {
     font-size:.75em;
     font-weight:bold;
     width:8em;
+    border-radius:5px;
 }
 /* Begin Reduced Header Styles for anything but Front Page*/
 .reduced-header {
