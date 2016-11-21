@@ -90,15 +90,77 @@ and open the template in the editor.
 }
 /*iPhone 6 Header */
 @media screen and (min-height:667px){
-    
+    p#front-decoration {
+        font-size:24px;
+        align-self:flex-end;
+        margin-right:.5em;
+        margin-top: .75em;
+        margin-bottom:.05em;
+    }
+    h1#hero-text {
+        font-size:50px;
+        margin-top:.75em;
+        margin-bottom:.5em;
+        letter-spacing:.05em;
+        text-shadow: 5px 5px #000000;
+    }
+
+    img#headshot-image {
+        width: 10em;
+        height: 10em;
+    }
+
+
+    p#full-hero-text {
+        font-size:1.25em;
+        margin:1.25em 1.25em;
+        text-shadow: 2px 2px #000000;
+    }
+
+    .nav-button {
+        margin:0 1em;
+        font-size:1em;
+        font-weight:bold;
+        width:8em;
+        border-radius:5px;
+    }
 }
 
 @media screen and (height:375px){
     
 }
-/*iPhone 6 PlusHeader */
+/*iPhone 6 Plus Header */
 @media screen and (min-height:730px){
-    
+    p#front-decoration {
+        font-size:24px;
+        align-self:flex-end;
+        margin-right:.5em;
+        margin-top: .75em;
+        margin-bottom:.05em;
+    }
+    h1#hero-text {
+        font-size:54px;
+    }
+
+    img#headshot-image {
+        width: 12em;
+        height: 12em;
+    }
+    p#full-hero-text {
+        font-size:1.25em;
+        margin:1.5em 1.25em;
+        text-shadow: 2px 2px #000000;
+    }
+    .flex-container-nav {
+        margin-top:2em;
+    }
+    .nav-button {
+        margin:0 2em;
+        font-size:1em;
+        font-weight:bold;
+        width:8em;
+        border-radius:5px;
+    } 
 }
 
 @media screen and (min-height:410px){
