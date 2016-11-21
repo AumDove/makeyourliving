@@ -860,7 +860,7 @@ p#full-hero-text {
     color: #004459;
     border:0;
     flex-direction:row;
-    justify-content: space-arzound;
+    justify-content: space-around;
     margin:0 2em;
     font-size:.75em;
     font-weight:bold;

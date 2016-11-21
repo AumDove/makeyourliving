@@ -8,9 +8,7 @@ and open the template in the editor.
     Author     : dozyd
 */
 /*iPhone 4 Header */
-@media screen and (max-height:480px){
-    
-}
+
 /*iPhone 5 Header */
 @media screen and (min-height:568px){
     h1#hero-text {
@@ -126,7 +124,7 @@ and open the template in the editor.
         border-radius:5px;
     }
 }
-
+/*iPhone 6 Landscape Header */
 @media screen and (height:375px){
     flex-container {
         position:relative;
@@ -143,21 +141,21 @@ and open the template in the editor.
         align-self:flex-start;
         font-size:50px;
         position:absolute;
-        margin-top:4.5rem;
+        margin-top:5.75rem;
         margin-bottom:1rem;
-        margin-left:1.15rem;
+        margin-left:1.25rem;
     }
     
     p#full-hero-text {
         order:2;
         width: 65%;
         align-self:flex-start;
-        font-size:1rem;
-        margin-top: 10rem;
-        margin-left:0;
+        font-size:1.25rem;
+        margin-top: 12rem;
+        margin-left:1.25rem;
         padding:.25em;
         position:absolute;
-        
+        text-align:left;
     }
     .flex-container-nav {
         order:3;
@@ -169,15 +167,17 @@ and open the template in the editor.
     img#headshot-image {
         order:1;
         align-self:flex-end;
-        width:7em;
-        height:7em;
-        margin-top:2rem;
+        width:9em;
+        height:9em;
+        margin-top:1.5rem;
         margin-bottom:.5em;
         margin-right:1.5em;
     }
     .nav-button{
-        margin:1em;
-
+        margin:1.25em;
+        margin-right:0em;
+        width:9em;
+        font-size:1rem;
     }
 }
 /*iPhone 6 Plus Header */
@@ -213,7 +213,7 @@ and open the template in the editor.
         border-radius:5px;
     } 
 }
-
+/*iPhone 6 Plus Landscape Header */
 @media screen and (height:414px){
     flex-container {
         position:relative;
@@ -228,23 +228,23 @@ and open the template in the editor.
     h1#hero-text {
         order:2;
         align-self:flex-start;
-        font-size:50px;
+        font-size:60px;
         position:absolute;
-        margin-top:4.5rem;
+        margin-top:5.75rem;
         margin-bottom:1rem;
-        margin-left:1.15rem;
+        margin-left:1.25rem;
     }
     
     p#full-hero-text {
         order:2;
         width: 65%;
         align-self:flex-start;
-        font-size:1rem;
-        margin-top: 10rem;
-        margin-left:0;
+        font-size:1.5rem;
+        margin-top: 12rem;
+        margin-left:1.25rem;
         padding:.25em;
         position:absolute;
-        
+        text-align:left;
     }
     .flex-container-nav {
         order:3;
@@ -256,15 +256,17 @@ and open the template in the editor.
     img#headshot-image {
         order:1;
         align-self:flex-end;
-        width:7em;
-        height:7em;
-        margin-top:2rem;
+        width:11em;
+        height:11em;
+        margin-top:1.5rem;
         margin-bottom:.5em;
         margin-right:1.5em;
     }
     .nav-button{
-        margin:1em;
-
+        margin:1.25em;
+        margin-right:0em;
+        width:10em;
+        font-size:1.15rem;
     }
 }
 
@@ -425,4 +427,168 @@ and open the template in the editor.
         margin:1em;
 
     }
+}
+/*Nexus 6P Landscape */
+@media screen and (height:412px){
+        flex-container {
+        position:relative;
+    }
+    p#front-decoration {
+        order:1;
+        align-self:center;
+        margin-right:0;
+        margin-top:.5em;
+        font-size:22px;
+    }
+    h1#hero-text {
+        order:2;
+        align-self:flex-start;
+        font-size:60px;
+        position:absolute;
+        margin-top:5.75rem;
+        margin-bottom:1rem;
+        margin-left:1.25rem;
+    }
+    
+    p#full-hero-text {
+        order:2;
+        width: 65%;
+        align-self:flex-start;
+        font-size:1.5rem;
+        margin-top: 12rem;
+        margin-left:1.25rem;
+        padding:.25em;
+        position:absolute;
+        text-align:left;
+    }
+    .flex-container-nav {
+        order:3;
+        flex-direction:column;
+        align-self:flex-end;  
+        justify-content: space-between;
+        margin-right:1.5em;
+    }
+    img#headshot-image {
+        order:1;
+        align-self:flex-end;
+        width:11em;
+        height:11em;
+        margin-top:1.5rem;
+        margin-bottom:.5em;
+        margin-right:1.5em;
+    }
+    .nav-button{
+        margin:1.25em;
+        margin-right:0em;
+        width:10em;
+        font-size:1.15rem;
+    }
+}
+
+/* Begin Tablet Header Styles */
+/*Portrait*/
+@media screen and (min-width:750px) {
+    
+    /* LOGO styles */
+    .site-logo a {
+	position: absolute;
+	z-index: 20;
+	top: 1.5em;
+	left: 1.5em;
+	display: block;
+	width: 4em;
+	height: 4em;
+	
+}
+.site-firstletter {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 3.25em;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.3em;
+}
+/*main header styles */
+    p#front-decoration {
+        font-size:30px;
+        margin-right:1.5em;
+        margin-top: 1.25em;
+        margin-bottom:.05em;
+    }
+    h1#hero-text {
+        font-size:80px;
+        margin-top:.5em;
+        margin-bottom:.5em;
+        letter-spacing:.05em;
+    }
+
+    img#headshot-image {
+        width: 17em;
+        height: 17em;
+    }
+    p#full-hero-text {
+        color:lightgray;
+        font-family: 'Fira Sans', sans-serif;
+        font-size:2em;
+        margin:1.25em 1.25em;
+        text-shadow: 2px 2px #000000;
+    }
+
+    .nav-button {
+        margin:0 2em;
+        font-size:1.5em;
+        width:8em;
+    }   
+}
+
+/* Tablet Landscape Styles */
+
+@media screen and (min-height:768px) and (min-width:1000px){
+    
+    p#front-decoration {
+        font-size:30px;
+        align-self:center
+    }
+    h1#hero-text {
+        order:2;
+        align-self:flex-start;
+        font-size:100px;
+        position:absolute;
+        margin-top:12rem;
+        margin-bottom:1rem;
+        margin-left:2.5rem;
+    }
+    
+    p#full-hero-text {
+        order:2;
+        width: 65%;
+        align-self:flex-start;
+        font-size:2rem;
+        margin-top: 26rem;
+        margin-left:2.5rem;
+        padding-right:1.25em;
+        position:absolute;
+        text-align:left;
+    }
+    .flex-container-nav {
+        order:3;
+        flex-direction:column;
+        align-self:flex-end;  
+        justify-content: space-between;
+        margin-right:1.5em;
+    }
+    img#headshot-image {
+        order:1;
+        align-self:flex-end;
+        width:15em;
+        height:15em;
+        margin-top:3rem;
+        margin-bottom:.5em;
+        margin-right:4em;
+    }
+    .nav-button{
+        margin:1.25em;
+        margin-right:1.5em;
+        width:15rem;
+        font-size:1.5rem;
+    }   
 }

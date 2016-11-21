@@ -144,7 +144,7 @@ function meg_scripts() {
 add_action( 'wp_enqueue_scripts', 'meg_scripts' );
 
 function media_devices_styles() {
-wp_enqueue_style( 'meg', get_template_directory_uri() . '/mobile-headers.css' );
+wp_enqueue_style( 'meg', get_template_directory_uri() . '/headers.css' );
 }
 add_action( 'wp_enqueue_scripts', 'media_devices_styles' );
 
