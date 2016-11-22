@@ -56,20 +56,17 @@
                         <div class="full-header">
                             <p id="front-decoration">Hello world,</p>
                             
-                            <h1 id="hero-text">I&apos;m Meg ...</h1>
+                            <h1 id="hero-text" class="hero-info">I&apos;m Meg ...</h1>
                             
-                            <img id="headshot-image" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/>
+                            <img id="headshot-image" class="headshot-nav" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/>
                             
-                            <p id="full-hero-text">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p>
+                            <p id="full-hero-text" class="hero-info">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p>
                         
-                            <div class="flex-container-nav">    
+                            <div class="flex-container-nav headshot-nav">    
                                 <button id="button-one" class="nav-button">Blog</button>
                                 <button id="button-two" class="nav-button">Contact</button>
                             </div>
-                        </div>       
-                        
-                             
-			
+                        </div>       		
                         <?php else : ?>
                     <div class="reduced-header">
                         
@@ -80,7 +77,7 @@
 		?>	
 		</div><!-- .site-branding -->
 
-            </div>
+            </div><!-- .flex-container -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

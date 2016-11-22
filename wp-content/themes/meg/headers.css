@@ -593,55 +593,82 @@ and open the template in the editor.
     }   
 }
 
-/*Laptop Screens */
+/*Laptop Screens (Small) */
 
-@media screen and (min-width:1200px) {
-    .site-branding{
-        background-image: url(/img/meg-lav-maui.jpg);
+
+/*Laptop Screens (Large) */
+
+@media screen and (min-width:1200px){
+    .site-header {
+        background:url(img/meg-lav-maui.jpg); 
+        background-size:cover;
+        
+    }
+    .flex-container {
+        display:flex;
+
     }
     p#front-decoration {
-        font-size:30px;
-        align-self:center
+        order:1;
+        color:navy;
+        margin-right:1.25em;
+        margin-top: .5em;
+        margin-bottom:.05em;
     }
     h1#hero-text {
-        order:2;
-        align-self:flex-start;
-        font-size:80px;
-        position:absolute;
-        margin-top:8rem;
-        margin-bottom:1rem;
-        margin-left:2.5rem;
+        order: 2;
+        font-size: 80px;
+        color:#004459;
+        font-weight:700;
+        margin-top: 1em;
+        margin-right: 2.5em;
+        margin-bottom: .05em;
+        letter-spacing: .05em;
+        text-shadow: .5px .5px #02FF57;
+        align-self: flex-end;
     }
-    
-    p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:1.75rem;
-        margin-top: 18rem;
-        margin-left:2.5rem;
-        padding-right:1.75em;
-        position:absolute;
-        text-align:left;
-    }
-    
+
     img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:21em;
-        height:21em;
-        margin-top:3rem;
-        margin-bottom:.5em;
-        margin-right:4em;
+        display:none;
     }
-    .flex-container-nav {
+
+    p#full-hero-text {
+        background:white;
+        opacity:.7;
+        border-radius:15px;
         order:3;
-        flex-direction:row;
-        align-self:center;
+        width:35%;
+        color:navy;
+        font-family: 'Fira Sans', sans-serif;
+        font-size:1.5rem;
+        margin-top:1em;
+        margin-right:6em;
+        padding:.75em .5em;
+        text-shadow: none;
+        align-self:flex-end;
+        font-weight:700;
+    }
+
+    .flex-container-nav {
+        order:4;
+        align-self:flex-end;
+        margin-right:9em;
+        margin-left:2em;
     }
     .nav-button {
-        justify-content: space-between;
-        font-size: 1.75rem;
-        margin:1.5em 6em;
-    }  
+        font-size:1.25em;
+        padding:1em;
+    }
+    /* Begin Logo Styles */
+    
+    .site-logo a {
+            top: 1.5em;
+            left: 1.5em;
+            width: 4em;
+            height: 4em;
+    }
+    .site-firstletter {
+	font-size: 3.5em;
+	line-height: 1.3em;
+    }
 }
