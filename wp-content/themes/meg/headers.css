@@ -8,81 +8,131 @@ and open the template in the editor.
     Author     : dozyd
 */
 /*iPhone 4 Header */
+@media screen and (width:320px) and (height:480px){
+    .site-logo {
+        background:red;
+    }
 
-/*iPhone 5 Header */
-@media screen and (min-height:568px){
-    h1#hero-text {
-        font-size:50px;
-    }
-    img#headshot-image {
-        width: 10em;
-        height: 10em;
-    }
-    .nav-button {
-        background-color: #02FF57;
-        color: #004459;
-        border:0;
-        flex-direction:row;
-        justify-content: space-around;
-        margin:0 2em;
-        font-size:.75em;
-        font-weight:bold;
-        width:9em;
-        height:3em;
+    .site-branding {
+        background:purple;
         
     }
+
+    .full-header {
+ 
+    }
+
+    #front-decoration {
+        background:yellow;
+        order:1;
+        justify-content: flex-end;
+    }
+    #hero-text {
+        background:orange;
+        order:2;    
+    }
+
+    #headshot-image {
+        background:green;
+        order:3;
+    }
+
+    #full-hero-text {
+        background:lawngreen;
+        order:4;
+    }
+
+    .flex-container-nav {
+        background:aliceblue;
+        order:5;
+    }
+  
+    
+}
+/*iPhone 5 Header */
+@media screen and (min-height:568px){
+    .site-logo {
+        
+    }
+
+    .site-branding {
+
+    }
+
+    .full-header {
+        font-size:30px;
+    }
+
+    .reduced-header {
+
+    }
+
+    #front-decoration {
+
+    }
+    #hero-text {
+
+    }
+
+    #headshot-image {
+
+    }
+
+    #full-hero-text {
+
+    }
+
+    .flex-container-nav {
+
+    }
+
+
 }
 /*iPhone 4 & 5 Landscape Header */
 @media screen and (max-height:320px){
-    flex-container {
-        position:relative;
+   .flex-container {
+       justify-content:center;
+       align-content:center;
     }
-    p#front-decoration {
+
+    .site-logo {
+
+    }
+
+    .site-branding {
+       justify-content:center;
+       align-content:center;
+    }
+
+    .full-header {
+        flex-direction:column;
+    }
+
+    .reduced-header {
+
+    }
+
+    #front-decoration {
         order:1;
-        align-self:center;
-        margin-right:0;
-        margin-top:.5em;
-        font-size:22px;
     }
-    h1#hero-text {
+    #hero-text {
         order:2;
-        align-self:flex-start;
-        font-size:50px;
-        position:absolute;
-        margin-top:4.5rem;
-        margin-bottom:1rem;
-        margin-left:1.15rem;
+    }
+
+    #headshot-image {
+        order:4;
+    }
+
+    #full-hero-text {
+        order:3;
     }
     
-    p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:1rem;
-        margin-top: 10rem;
-        margin-left:0;
-        padding:.25em;
-        position:absolute;
-        
-    }
     .flex-container-nav {
-        order:3;
-        flex-direction:column;
-        align-self:flex-end;  
-        justify-content: space-between;
-        margin-right:1.5em;
+        order:5;
     }
-    img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:7em;
-        height:7em;
-        margin-top:2rem;
-        margin-bottom:.5em;
-        margin-right:1.5em;
-    }
-    .nav-button{
-        margin:1em;
+
+    .hero-info {
+        background:purple;
 
     }
 }
@@ -126,7 +176,7 @@ and open the template in the editor.
 }
 /*iPhone 6 Landscape Header */
 @media screen and (height:375px){
-    flex-container {
+    .flex-container {
         position:relative;
     }
     p#front-decoration {
@@ -215,7 +265,7 @@ and open the template in the editor.
 }
 /*iPhone 6 Plus Landscape Header */
 @media screen and (height:414px){
-    flex-container {
+    .flex-container {
         position:relative;
     }
     p#front-decoration {
@@ -306,7 +356,7 @@ and open the template in the editor.
 }
 /*Samsung Galaxy SIII Landscape*/
 @media screen and (height:360px){
-    flex-container {
+    .flex-container {
         position:relative;
     }
     p#front-decoration {
@@ -376,7 +426,7 @@ and open the template in the editor.
 }
 /*Nexus 5X Landscape*/
 @media screen and (height:412px){
-    flex-container {
+    .flex-container {
         position:relative;
     }
     p#front-decoration {
@@ -430,7 +480,7 @@ and open the template in the editor.
 }
 /*Nexus 6P Landscape */
 @media screen and (height:412px){
-        flex-container {
+    .flex-container {
         position:relative;
     }
     p#front-decoration {
@@ -542,7 +592,7 @@ and open the template in the editor.
 
 /* Tablet Landscape Styles */
 
-@media screen and (min-height:768px) and (min-width:1000px){
+@media screen and (height:768px) and (width:1024px){
     
     p#front-decoration {
         font-size:30px;
@@ -594,7 +644,11 @@ and open the template in the editor.
 }
 
 /*Laptop Screens (Small) */
-
+@media screen and (min-width:1025px){
+    .full-header {
+    width:40%;
+}
+}
 
 /*Laptop Screens (Large) */
 
@@ -603,6 +657,9 @@ and open the template in the editor.
         background:url(img/meg-lav-maui.jpg); 
         background-size:cover;
         
+    }
+    .full-header {
+
     }
     .flex-container {
         display:flex;

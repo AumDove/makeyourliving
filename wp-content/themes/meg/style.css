@@ -799,74 +799,85 @@ a:active {
 # Header
 --------------------------------------------------------------*/
 .site-header {
-    background-color: #000; 
-    background-size:cover;
-}
-.flex-container {
-    display:flex;
-    
-}
-.full-header {
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    background-position-x: 30%;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    border:0;
 }
-p#front-decoration {
-    color:lightgray;
-    font-family:'Courier New', sans-serif;
-    align-self:flex-end;
-    margin-right:1.25em;
-    margin-top: 1.25em;
-    margin-bottom:.05em;
+.site-branding {
+    width:100%;
+    
 }
-h1#hero-text {
-    font-family:'Economica', sans-serif;
-    font-weight: 500;
-    color: #02FF57;
-    font-size:36px;
-    margin-top:.25em;
-    margin-bottom:.5em;
-    letter-spacing:.05em;
-    text-shadow: 5px 5px #000000;
-}
+    .full-header {
+        width:98%;
+        max-height:100vh;
+        font-size:18px;
 
-img#headshot-image {
-    width: 7em;
-    height: 7em;
-    border-radius:50%;
-}
+        display:flex;
+        align-items: center;
+        flex-direction:column;
 
+    }
+        p#front-decoration {
+            color: lightgray;
+            font-family: 'Courier New', sans-serif;
+            margin-bottom: 1em;
+            
+            align-self:flex-end;
+            
+        }
+/*        .hero-info{
+            display: flex;
+            flex-direction: column;
+        }*/
+            h1#hero-text {
+                font-family:'Economica', sans-serif;
+                font-weight: 500;
+                color: #02FF57;
+                font-size:2em;;
+                letter-spacing:.05em;
+                text-shadow: 1px 1px #000000;
+                margin-top:0;
+                margin-left:0em;
+                order:2;
+            }
+            p#full-hero-text {
+                color:lightgray;
+                font-family: 'Fira Sans', sans-serif;
+                font-size:.8em;
+                padding:.5em;
+                margin:.25em .5em;
+                text-shadow: 1px 1px #000000;
+                text-align:center;
+                
+                order:4;
+ 
+            }
+/*        .headshot-nav{
+            display: flex;
+            flex-direction: column;
+        }*/
+            
+            img#headshot-image {
+                width: 8em;
+                height: 8em;
+                border-radius:50%;
+                
+                order:4;
 
-p#full-hero-text {
-    color:lightgray;
-    font-family: 'Fira Sans', sans-serif;
-    font-size:1.1rem;
-    margin:1.25em 1.25em;
-    text-shadow: 2px 2px #000000;
-}
+            }
 
-.flex-container-nav {
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-}
-.nav-button {
-    background-color: #02FF57;
-    color: #004459;
-    border:0;
-    flex-direction:row;
-    justify-content: space-around;
-    margin:0 2em;
-    font-size:.75em;
-    font-weight:bold;
-    width:8em;
-    border-radius:5px;
-}
+            .flex-container-nav {
+                
+                order:5;
+   
+            }
+                .nav-button {
+                    background-color: #02FF57;
+                    color: #004459;
+                    font-size:.75em;
+                    font-weight:bold;
+                    border-radius:5px;
+                }
 /* Begin Reduced Header Styles for anything but Front Page*/
 .reduced-header {
     height: 3.5em;
@@ -914,9 +925,7 @@ p#full-hero-text {
 	background: white;
 	color: black;
 }
-.site-branding {
-    text-align: center;
-}
+
 .site-title {
     margin: 1.7em 1em 0;
     font-family: 'Fira Sans', sans-serif;

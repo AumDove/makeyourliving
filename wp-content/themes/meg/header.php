@@ -30,42 +30,43 @@
             <?php } ?>
             
                        
-          
-            <div class="flex-container">        
-               <?php // Display site icon or first letter as logo ?>	
-		<div class="site-logo">
-			<?php $site_title = get_bloginfo( 'name' ); ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<div class="screen-reader-text">
-					<?php printf( esc_html__('Go to the home page of %1$s', 'meg'), $site_title ); ?>	
-				</div>
-				<?php
-				if ( has_custom_logo() ) {
-					the_custom_logo();
-				} else { ?>
-					<div class="site-firstletter" aria-hidden="true">
-						<?php echo substr($site_title, 0, 1); ?>
-					</div>
-				<?php } ?>
-			</a>
-		</div>
-            
+
                 <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?> >
+                        <?php // Display site icon or first letter as logo ?>	
+                         <div class="site-logo">
+                                 <?php $site_title = get_bloginfo( 'name' ); ?>
+                                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                         <div class="screen-reader-text">
+                                                 <?php printf( esc_html__('Go to the home page of %1$s', 'meg'), $site_title ); ?>	
+                                         </div>
+                                         <?php
+                                         if ( has_custom_logo() ) {
+                                                 the_custom_logo();
+                                         } else { ?>
+                                                 <div class="site-firstletter" aria-hidden="true">
+                                                         <?php echo substr($site_title, 0, 1); ?>
+                                                 </div>
+                                         <?php } ?>
+                                 </a>
+                         </div><!-- .site-logo -->
+            
+
 			<?php
 			if ( is_front_page()) : ?>
-                        <div class="full-header">
-                            <p id="front-decoration">Hello world,</p>
-                            
-                            <h1 id="hero-text" class="hero-info">I&apos;m Meg ...</h1>
-                            
-                            <img id="headshot-image" class="headshot-nav" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/>
-                            
-                            <p id="full-hero-text" class="hero-info">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p>
-                        
-                            <div class="flex-container-nav headshot-nav">    
+
+                        <div class="full-header"><!-- .full-header -->
+                             <p id="front-decoration">Hello, world!</p>
+                            <img id="headshot-image" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/> 
+                            <h1 id="hero-text">I&apos;m Meg ...</h1>
+                            <p id="full-hero-text">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p> 
+
+                                                 
+
+                            <div class="flex-container-nav">    
                                 <button id="button-one" class="nav-button">Blog</button>
                                 <button id="button-two" class="nav-button">Contact</button>
                             </div>
+                            
                         </div>       		
                         <?php else : ?>
                     <div class="reduced-header">
@@ -77,7 +78,7 @@
 		?>	
 		</div><!-- .site-branding -->
 
-            </div><!-- .flex-container -->
+           
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
