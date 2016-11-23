@@ -805,13 +805,13 @@ a:active {
 }
 .site-branding {
     width:100%;
-    
+
 }
     .full-header {
         width:98%;
-        max-height:100vh;
         font-size:18px;
-
+        height:100vh;
+        
         display:flex;
         align-items: center;
         flex-direction:column;
@@ -823,53 +823,48 @@ a:active {
             margin-bottom: 1em;
             
             align-self:flex-end;
-            
+            justify-content: flex-end;
         }
-/*        .hero-info{
-            display: flex;
-            flex-direction: column;
-        }*/
+
             h1#hero-text {
                 font-family:'Economica', sans-serif;
                 font-weight: 500;
                 color: #02FF57;
-                font-size:2em;;
+                font-size:2.5em;;
                 letter-spacing:.05em;
-                text-shadow: 1px 1px #000000;
                 margin-top:0;
-                margin-left:0em;
-                order:2;
+                text-shadow: 1px 1px #000000;
+                
+/*                order:2;*/
             }
             p#full-hero-text {
                 color:lightgray;
                 font-family: 'Fira Sans', sans-serif;
-                font-size:.8em;
+                font-size:1em;
                 padding:.5em;
-                margin:.25em .5em;
+                margin:.5em .5em;
                 text-shadow: 1px 1px #000000;
                 text-align:center;
-                
-                order:4;
+
+/*                order:4;*/
  
             }
-/*        .headshot-nav{
-            display: flex;
-            flex-direction: column;
-        }*/
+
             
             img#headshot-image {
-                width: 8em;
-                height: 8em;
+                width: 7em;
+                height: 7em;
                 border-radius:50%;
                 
-                order:4;
-
+/*                order:4;*/
             }
 
             .flex-container-nav {
+                width:100%;
                 
-                order:5;
-   
+/*                order:5;*/
+                display: flex;
+                justify-content: space-around;
             }
                 .nav-button {
                     background-color: #02FF57;
@@ -877,7 +872,13 @@ a:active {
                     font-size:.75em;
                     font-weight:bold;
                     border-radius:5px;
+                    border:1px solid #004459;
+                    text-transform:uppercase;
+                    margin:1.5em 1.5em .5em 1.5em;
+                    width:10em;
+                    padding:1em 2em;
                 }
+                
 /* Begin Reduced Header Styles for anything but Front Page*/
 .reduced-header {
     height: 3.5em;
