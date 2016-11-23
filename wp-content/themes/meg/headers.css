@@ -160,7 +160,7 @@ and open the template in the editor.
 /*********************************************/
 
 /*Portrait*/
-@media screen and (min-width:768px) and (min-height:1024px) {
+@media screen and (min-width:768px) and (min-height:1024px){
     .full-header {
       font-size:24px;
       align-items:center;
@@ -193,19 +193,17 @@ and open the template in the editor.
     }
     h1#hero-text {
         width:auto;
-        font-size:3em;
+        font-size:4em;
         margin:.5em;
     }
 
     img#headshot-image {
-        width:auto;
-        margin:.5em;
-        height:13em;
-        width: 13em;
+        margin-right:0;
         align-self:center;
     }
     p#full-hero-text {
         max-width:90vw;
+        height:auto;
         font-size:1.25em;
         align-self:center;
         margin:0;
@@ -221,140 +219,70 @@ and open the template in the editor.
 
 /* Tablet Landscape Styles */
 
-@media screen and (height:768px) and (width:1024px){
-    
+@media screen and (min-height:768px) and (min-width:1024px){
+    .full-header {
+        font-size:24px;
+    }
     p#front-decoration {
-        font-size:30px;
-        align-self:center
+        font-size:1.25em;
     }
     h1#hero-text {
-        order:2;
-        align-self:flex-start;
-        font-size:100px;
-        position:absolute;
-        margin-top:12rem;
-        margin-bottom:1rem;
-        margin-left:2.5rem;
+        width:auto;
+        font-size:4.5em;
     }
-    
+
     p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:2rem;
-        margin-top: 26rem;
-        margin-left:2.5rem;
-        padding-right:1.25em;
-        position:absolute;
-        text-align:left;
+        max-width:90vw;
+        height:auto;
+        font-size:1.5em;
+        margin:1em .25em;
+        padding:0;
     }
     .flex-container-nav {
-        order:3;
-        flex-direction:column;
-        align-self:flex-end;  
-        justify-content: space-between;
-        margin-right:1.5em;
+        width:100%;
+        flex-direction:row;
+        margin-top:.25em;
     }
-    img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:15em;
-        height:15em;
-        margin-top:3rem;
-        margin-bottom:.5em;
-        margin-right:4em;
+    .nav-button {
+        font-size:1.5em;
+        padding:.5em 0;
+        margin:0;
     }
-    .nav-button{
-        margin:1.25em;
-        margin-right:1.5em;
-        width:15rem;
-        font-size:1.5rem;
-    }   
 }
 
 /*Laptop Screens (Small) */
-@media screen and (min-width:1025px){
-    .full-header {
-    width:40%;
-}
+@media screen and (min-width:1200px) and (min-height:600px){
+      .full-header {
+        font-size:24px;
+    }
+    p#front-decoration {
+        font-size:1.25em;
+    }
+    h1#hero-text {
+        width:auto;
+        font-size:4.5em;
+    }
+
+    p#full-hero-text {
+        max-width:90vw;
+        height:auto;
+        font-size:1.5em;
+        margin:1em .25em;
+        padding:0;
+    }
+    .flex-container-nav {
+        width:100%;
+        flex-direction:row;
+        margin-top:.25em;
+    }
+    .nav-button {
+        font-size:1.5em;
+        padding:.5em 0;
+        margin:0;
+    }
 }
 
 /*Laptop Screens (Large) */
 
 @media screen and (min-width:1200px){
-    .site-header {
-        background:url(img/meg-lav-maui.jpg); 
-        background-size:cover;
-        
-    }
-    .full-header {
-
-    }
-    .flex-container {
-        display:flex;
-
-    }
-    p#front-decoration {
-        order:1;
-        color:navy;
-        margin-right:1.25em;
-        margin-top: .5em;
-        margin-bottom:.05em;
-    }
-    h1#hero-text {
-        order: 2;
-        font-size: 80px;
-        color:#004459;
-        font-weight:700;
-        margin-top: 1em;
-        margin-right: 2.5em;
-        margin-bottom: .05em;
-        letter-spacing: .05em;
-        text-shadow: .5px .5px #02FF57;
-        align-self: flex-end;
-    }
-
-    img#headshot-image {
-        display:none;
-    }
-
-    p#full-hero-text {
-        background:white;
-        opacity:.7;
-        border-radius:15px;
-        order:3;
-        width:35%;
-        color:navy;
-        font-family: 'Fira Sans', sans-serif;
-        font-size:1.5rem;
-        margin-top:1em;
-        margin-right:6em;
-        padding:.75em .5em;
-        text-shadow: none;
-        align-self:flex-end;
-        font-weight:700;
-    }
-
-    .flex-container-nav {
-        order:4;
-        align-self:flex-end;
-        margin-right:9em;
-        margin-left:2em;
-    }
-    .nav-button {
-        font-size:1.25em;
-        padding:1em;
-    }
-    /* Begin Logo Styles */
-    
-    .site-logo a {
-            top: 1.5em;
-            left: 1.5em;
-            width: 4em;
-            height: 4em;
-    }
-    .site-firstletter {
-	font-size: 3.5em;
-	line-height: 1.3em;
-    }
 }
