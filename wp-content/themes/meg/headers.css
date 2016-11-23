@@ -9,110 +9,39 @@ and open the template in the editor.
 */
 /*iPhone 4 Header */
 @media screen and (min-width:320px){
-    .site-logo {
-
-    }
-
-    .site-branding {
-
-        
-    }
 
     .full-header {
         font-size:16px;
     }
 
     #front-decoration {
-
         order:1;
-
-
     }
     #hero-text {
-
         order:2;    
     }
-
     #headshot-image {
         order:3;
     }
-
     #full-hero-text {
-
         font-size:1em;
-        
-        
         order:4;
     }
-
     .flex-container-nav {
-
-        order:5;
+         order:5;
     }
   
     
 }
 /*iPhone 5 Header */
 @media screen and (min-height:568px){
-    .site-logo {
-        
-    }
-
-    .site-branding {
-
-    }
-
     .full-header {
         font-size:18px;
     }
 
-    .reduced-header {
-
-    }
-
-    #front-decoration {
-
-    }
-    #hero-text {
-
-    }
-
-    #headshot-image {
-
-    }
-
-    #full-hero-text {
-
-    }
-
-    .flex-container-nav {
-
-    }
-
-
 }
 /*iPhone 4 & 5 Landscape Header */
 @media screen and (max-height:320px){
-   .flex-container {
-
-    }
-
-    .site-logo {
-
-    }
-
-    .site-branding {
-
-    }
-
-    .full-header {
-
-
-    }
-
-    .reduced-header {
-
-    }
 
     #front-decoration {
         order:1;
@@ -133,10 +62,6 @@ and open the template in the editor.
         order:5;
     }
 
-    .hero-info {
-        background:purple;
-
-    }
 }
 
 /*iPhone 6 Header */
@@ -144,79 +69,40 @@ and open the template in the editor.
     .full-header{
          font-size:20px;
     }
-    p#front-decoration {
-       
-
-    }
-    h1#hero-text {
-
-    }
 
     img#headshot-image {
         width: 10em;
         height: 10em;
     }
 
-
-    p#full-hero-text {
-
-    }
-
-    .nav-button {
-
-    }
 }
 /*iPhone 6 Landscape Header */
 @media screen and (height:375px){
-   .flex-container {
-
-    }
-
-    .site-logo {
-
-    }
-
-    .site-branding {
-
-    }
-
-    .full-header {
-
-
-    }
-
-    .reduced-header {
-
-    }
-
     #front-decoration {
-        order:1;
+
     }
     #hero-text {
-        order:2;
+
     }
 
     #headshot-image {
-        order:4;
+
     }
 
     #full-hero-text {
-        order:3;
+
     }
     
     .flex-container-nav {
-        order:5;
-    }
-
-    .hero-info {
-        background:purple;
 
     }
+
+
 }
 /*iPhone 6 Plus Header */
 @media screen and (min-height:730px){
     .full-header {
-         font-size:22px;
+        font-size:22px;
     }
     p#front-decoration {
         margin-bottom:.5em;
@@ -233,59 +119,30 @@ and open the template in the editor.
         margin-top:1em;
         text-shadow: 2px 2px #000000;
     }
-    .flex-container-nav {
-        
-    }
-    .nav-button {
-
-    } 
+ 
 }
 /*iPhone 6 Plus Landscape Header */
 @media screen and (height:414px){
-   .flex-container {
-
-    }
-
-    .site-logo {
-
-    }
-
-    .site-branding {
-
-    }
-
-    .full-header {
-
-
-    }
-
-    .reduced-header {
-
-    }
 
     #front-decoration {
-        order:1;
+
     }
     #hero-text {
-        order:2;
+
     }
 
     #headshot-image {
-        order:4;
+
     }
 
     #full-hero-text {
-        order:3;
+
     }
     
     .flex-container-nav {
-        order:5;
-    }
-
-    .hero-info {
-        background:purple;
 
     }
+
 }
 
 /*Samsung Galaxy SIII Landscape*/
@@ -312,28 +169,24 @@ and open the template in the editor.
     }
 
     #front-decoration {
-        order:1;
+
     }
     #hero-text {
-        order:2;
+
     }
 
     #headshot-image {
-        order:4;
+
     }
 
     #full-hero-text {
-        order:3;
+
     }
     
     .flex-container-nav {
-        order:5;
-    }
-
-    .hero-info {
-        background:purple;
 
     }
+
 }
 
 /*Nexus 5X Landscape*/
@@ -360,28 +213,24 @@ and open the template in the editor.
     }
 
     #front-decoration {
-        order:1;
+
     }
     #hero-text {
-        order:2;
+
     }
 
     #headshot-image {
-        order:4;
+
     }
 
     #full-hero-text {
-        order:3;
+
     }
     
     .flex-container-nav {
-        order:5;
-    }
-
-    .hero-info {
-        background:purple;
 
     }
+
 }
 /*Nexus 6P Landscape */
 @media screen and (height:412px){
@@ -407,28 +256,24 @@ and open the template in the editor.
     }
 
     #front-decoration {
-        order:1;
+
     }
     #hero-text {
-        order:2;
+
     }
 
     #headshot-image {
-        order:4;
+
     }
 
     #full-hero-text {
-        order:3;
+
     }
     
     .flex-container-nav {
-        order:5;
-    }
-
-    .hero-info {
-        background:purple;
 
     }
+
 }
 
 /*********************************************/
