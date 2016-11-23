@@ -168,58 +168,49 @@ and open the template in the editor.
 }
 /*iPhone 6 Landscape Header */
 @media screen and (height:375px){
-    .flex-container {
-        position:relative;
+   .flex-container {
+
     }
-    p#front-decoration {
+
+    .site-logo {
+
+    }
+
+    .site-branding {
+
+    }
+
+    .full-header {
+
+
+    }
+
+    .reduced-header {
+
+    }
+
+    #front-decoration {
         order:1;
-        align-self:center;
-        margin-right:0;
-        margin-top:.5em;
-        font-size:22px;
     }
-    h1#hero-text {
+    #hero-text {
         order:2;
-        align-self:flex-start;
-        font-size:50px;
-        position:absolute;
-        margin-top:5.75rem;
-        margin-bottom:1rem;
-        margin-left:1.25rem;
+    }
+
+    #headshot-image {
+        order:4;
+    }
+
+    #full-hero-text {
+        order:3;
     }
     
-    p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:1.25rem;
-        margin-top: 12rem;
-        margin-left:1.25rem;
-        padding:.25em;
-        position:absolute;
-        text-align:left;
-    }
     .flex-container-nav {
-        order:3;
-        flex-direction:column;
-        align-self:flex-end;  
-        justify-content: space-between;
-        margin-right:1.5em;
+        order:5;
     }
-    img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:9em;
-        height:9em;
-        margin-top:1.5rem;
-        margin-bottom:.5em;
-        margin-right:1.5em;
-    }
-    .nav-button{
-        margin:1.25em;
-        margin-right:0em;
-        width:9em;
-        font-size:1rem;
+
+    .hero-info {
+        background:purple;
+
     }
 }
 /*iPhone 6 Plus Header */
@@ -251,257 +242,192 @@ and open the template in the editor.
 }
 /*iPhone 6 Plus Landscape Header */
 @media screen and (height:414px){
-    .flex-container {
-        position:relative;
+   .flex-container {
+
     }
-    p#front-decoration {
+
+    .site-logo {
+
+    }
+
+    .site-branding {
+
+    }
+
+    .full-header {
+
+
+    }
+
+    .reduced-header {
+
+    }
+
+    #front-decoration {
         order:1;
-        align-self:center;
-        margin-right:0;
-        margin-top:.5em;
-        font-size:22px;
     }
-    h1#hero-text {
+    #hero-text {
         order:2;
-        align-self:flex-start;
-        font-size:60px;
-        position:absolute;
-        margin-top:5.75rem;
-        margin-bottom:1rem;
-        margin-left:1.25rem;
+    }
+
+    #headshot-image {
+        order:4;
+    }
+
+    #full-hero-text {
+        order:3;
     }
     
-    p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:1.5rem;
-        margin-top: 12rem;
-        margin-left:1.25rem;
-        padding:.25em;
-        position:absolute;
-        text-align:left;
-    }
     .flex-container-nav {
-        order:3;
-        flex-direction:column;
-        align-self:flex-end;  
-        justify-content: space-between;
-        margin-right:1.5em;
-    }
-    img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:11em;
-        height:11em;
-        margin-top:1.5rem;
-        margin-bottom:.5em;
-        margin-right:1.5em;
-    }
-    .nav-button{
-        margin:1.25em;
-        margin-right:0em;
-        width:10em;
-        font-size:1.15rem;
-    }
-}
-
-/*Samsung Galaxy SIII */
-@media screen and (height:640px){
-    p#front-decoration {
-
-    }
-    h1#hero-text {
-
+        order:5;
     }
 
-    img#headshot-image {
-
-    }
-    p#full-hero-text {
-
-    }
-    .nav-button {
+    .hero-info {
+        background:purple;
 
     }
 }
+
 /*Samsung Galaxy SIII Landscape*/
 @media screen and (height:360px){
-    .flex-container {
-        position:relative;
+   .flex-container {
+
     }
-    p#front-decoration {
+
+    .site-logo {
+
+    }
+
+    .site-branding {
+
+    }
+
+    .full-header {
+
+
+    }
+
+    .reduced-header {
+
+    }
+
+    #front-decoration {
         order:1;
-        align-self:center;
-        margin-right:0;
-        margin-top:.5em;
-        font-size:22px;
     }
-    h1#hero-text {
+    #hero-text {
         order:2;
-        align-self:flex-start;
-        font-size:50px;
-        position:absolute;
-        margin-top:4.5rem;
-        margin-bottom:1rem;
-        margin-left:1.15rem;
+    }
+
+    #headshot-image {
+        order:4;
+    }
+
+    #full-hero-text {
+        order:3;
     }
     
-    p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:1rem;
-        margin-top: 10rem;
-        margin-left:0;
-        padding:.25em;
-        position:absolute;
-        
-    }
     .flex-container-nav {
-        order:3;
-        flex-direction:column;
-        align-self:flex-end;  
-        justify-content: space-between;
-        margin-right:1.5em;
+        order:5;
     }
-    img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:7em;
-        height:7em;
-        margin-top:2rem;
-        margin-bottom:.5em;
-        margin-right:1.5em;
-    }
-    .nav-button{
-        margin:1em;
+
+    .hero-info {
+        background:purple;
 
     }
 }
-/*Nexus 5X */
-@media screen and (min-height:732px){
-    .full-header{
 
-    }
-    p#front-decoration {
-
-    }
-    h1#hero-text {
-
-    }
-    p#full-hero-text {
-
-    }
-}
 /*Nexus 5X Landscape*/
 @media screen and (height:412px){
-    .flex-container {
-        position:relative;
+   .flex-container {
+
     }
-    p#front-decoration {
+
+    .site-logo {
+
+    }
+
+    .site-branding {
+
+    }
+
+    .full-header {
+
+
+    }
+
+    .reduced-header {
+
+    }
+
+    #front-decoration {
         order:1;
-        align-self:center;
-        margin-right:0;
-        margin-top:.5em;
-        font-size:22px;
     }
-    h1#hero-text {
+    #hero-text {
         order:2;
-        align-self:flex-start;
-        font-size:50px;
-        position:absolute;
-        margin-top:4.5rem;
-        margin-bottom:1rem;
-        margin-left:1.15rem;
+    }
+
+    #headshot-image {
+        order:4;
+    }
+
+    #full-hero-text {
+        order:3;
     }
     
-    p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:1rem;
-        margin-top: 10rem;
-        margin-left:0;
-        padding:.25em;
-        position:absolute;
-        
-    }
     .flex-container-nav {
-        order:3;
-        flex-direction:column;
-        align-self:flex-end;  
-        justify-content: space-between;
-        margin-right:1.5em;
+        order:5;
     }
-    img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:7em;
-        height:7em;
-        margin-top:2rem;
-        margin-bottom:.5em;
-        margin-right:1.5em;
-    }
-    .nav-button{
-        margin:1em;
+
+    .hero-info {
+        background:purple;
 
     }
 }
 /*Nexus 6P Landscape */
 @media screen and (height:412px){
-    .flex-container {
-        position:relative;
+   .flex-container {
+
     }
-    p#front-decoration {
+
+    .site-logo {
+
+    }
+
+    .site-branding {
+
+    }
+
+    .full-header {
+
+
+    }
+
+    .reduced-header {
+
+    }
+
+    #front-decoration {
         order:1;
-        align-self:center;
-        margin-right:0;
-        margin-top:.5em;
-        font-size:22px;
     }
-    h1#hero-text {
+    #hero-text {
         order:2;
-        align-self:flex-start;
-        font-size:60px;
-        position:absolute;
-        margin-top:5.75rem;
-        margin-bottom:1rem;
-        margin-left:1.25rem;
+    }
+
+    #headshot-image {
+        order:4;
+    }
+
+    #full-hero-text {
+        order:3;
     }
     
-    p#full-hero-text {
-        order:2;
-        width: 65%;
-        align-self:flex-start;
-        font-size:1.5rem;
-        margin-top: 12rem;
-        margin-left:1.25rem;
-        padding:.25em;
-        position:absolute;
-        text-align:left;
-    }
     .flex-container-nav {
-        order:3;
-        flex-direction:column;
-        align-self:flex-end;  
-        justify-content: space-between;
-        margin-right:1.5em;
+        order:5;
     }
-    img#headshot-image {
-        order:1;
-        align-self:flex-end;
-        width:11em;
-        height:11em;
-        margin-top:1.5rem;
-        margin-bottom:.5em;
-        margin-right:1.5em;
-    }
-    .nav-button{
-        margin:1.25em;
-        margin-right:0em;
-        width:10em;
-        font-size:1.15rem;
+
+    .hero-info {
+        background:purple;
+
     }
 }
 
