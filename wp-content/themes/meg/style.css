@@ -804,11 +804,12 @@ a:active {
     background-size: cover;
 }
 .site-branding {
-    width:100%;
-
+    width:100vw;
+    height:100vh;
 }
     .full-header {
         width:98%;
+        height:100vh;
         font-size:18px;
 
         
