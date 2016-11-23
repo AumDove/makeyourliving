@@ -44,7 +44,7 @@ and open the template in the editor.
 /*iPhone 4 & 5 Landscape Header */
 @media screen and (min-height:320px) and (min-width:480px){
     .full-header {
-        width:100%;
+       
 
         font-size:16px;
         flex-wrap:wrap;
@@ -61,7 +61,7 @@ and open the template in the editor.
     }
     h1#hero-text {
         width:60%;
-        font-size:3em;
+        font-size:2.5em;
         margin-left:1em;
         order:2;
 
@@ -161,10 +161,12 @@ and open the template in the editor.
 
 /*Portrait*/
 @media screen and (min-width:768px) and (min-height:1024px) {
-    
-    .full-header{
-        font-size:26px;
+    .full-header {
+      font-size:24px;
+      align-items:center;
+      flex-direction:column;
     }
+    
     /* LOGO styles */
     .site-logo a {
 	position: absolute;
@@ -187,23 +189,30 @@ and open the template in the editor.
     /*main header styles */
     p#front-decoration {
         font-size:1.5em;
-
+        
     }
     h1#hero-text {
-        font-size:3.25em;
-        margin-bottom: .5em;
+        width:auto;
+        font-size:3em;
+        margin:.5em;
     }
 
     img#headshot-image {
-        height:11em;
-        width: 11em;
+        width:auto;
+        margin:.5em;
+        height:13em;
+        width: 13em;
+        align-self:center;
     }
     p#full-hero-text {
+        max-width:90vw;
         font-size:1.25em;
-        margin:.5em;
+        align-self:center;
+        margin:0;
     }
     .flex-container-nav {
         flex-direction:row;
+        align-self:center;
     }
     .nav-button {
         font-size:1.1em;
