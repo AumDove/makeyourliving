@@ -869,14 +869,15 @@ a:active {
                 .nav-button {
                     background-color: #02FF57;
                     color: #004466;
-                    font-size:.75em;
-                    
+                    font-size:1em;
+                    font-family: 'Fira Sans', sans-serif;
                     border-radius:5px;
                     border:1px solid #004466;
-                    
-                    margin:1.5em 1.5em .5em 1.5em;
+                    text-align:center;
+                    text-decoration:none;
+                    margin:.5em 1.5em .5em 1.5em;
                     width:10em;
-                    padding:1em 2em;
+                    padding:.5em 1em;
                 }
                 
 /* Begin Reduced Header Styles for anything but Front Page*/
