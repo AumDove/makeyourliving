@@ -123,10 +123,11 @@ function meg_scripts() {
         
         // Add Google Fonts: Fira Sans and Merriweather
        // wp_enqueue_style( 'meg-google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i' );
-        wp_enqueue_style( 'meg-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css');
+        wp_enqueue_style( 'meg-local-fonts', get_stylesheet_directory_uri() . '/fonts/custom-fonts.css');
         
         // Add Font Awesome icons (http://fontawesome.io) 
-	wp_enqueue_style( 'meg-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'meg-fontawesome-fonts', get_stylesheet_directory_uri() . '/fonts/font-awesome/fonts/');
+        wp_enqueue_style( 'meg-fontawesome-style', get_stylesheet_directory_uri() . '/fonts/font-awesome/css/font-awesome.css');
         
 	wp_enqueue_script( 'meg-navigation', get_template_directory_uri() . '/js/function.js', array( 'jquery' ), '20151215', true );
         wp_localize_script( 'meg-navigation', 'screenReaderText', array(
@@ -141,6 +142,11 @@ function meg_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'meg_scripts' );
+
+function media_devices_styles() {
+wp_enqueue_style( 'meg', get_template_directory_uri() . '/headers.css' );
+}
+add_action( 'wp_enqueue_scripts', 'media_devices_styles' );
 
 /**
  * Implement the Custom Header feature.

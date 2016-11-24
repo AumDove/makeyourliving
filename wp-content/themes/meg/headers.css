@@ -1,0 +1,288 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 20, 2016, 5:04:48 PM
+    Author     : dozyd
+*/
+/*iPhone 4 Header */
+@media screen and (width:320px){
+
+    .full-header {
+        font-size:16px;
+    }
+
+    #front-decoration {
+        order:1;
+        align-self:flex-end;
+    }
+    
+    #hero-text {
+        order:2;  
+
+    }
+    #headshot-image {
+        order:3;
+    }
+    #full-hero-text {
+        font-size:1em;
+        order:4;
+    }
+    .flex-container-nav {
+         order:5;
+    }
+
+}
+/*iPhone 5 Header */
+@media screen and (min-height:568px){
+    .full-header {
+        font-size:18px;
+    }
+}
+/*iPhone 4 & 5 Landscape Header */
+@media screen and (min-height:320px) and (min-width:480px){
+    .full-header {
+       
+
+        font-size:16px;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content: space-around;
+
+    }
+    p#front-decoration {
+        width:100%;
+        text-align:center;
+        align-self:center;
+        order:1;
+
+    }
+    h1#hero-text {
+        width:60%;
+        font-size:2.5em;
+        margin-left:1em;
+        order:2;
+
+    }
+
+    img#headshot-image {
+
+        margin-right:2em;
+        align-self:flex-end;
+        order:3;
+    }
+
+    p#full-hero-text {
+        max-width:60vw;
+        height:40%;
+        align-self:flex-start;
+        order:3;
+        font-size:.9em;
+    }
+    
+    .flex-container-nav {
+        width:35%;
+        order:5;
+        flex-direction:column;
+        margin-bottom:2em;
+        margin-right:0em;
+        align-items: center;
+    }
+
+}
+
+/*iPhone 6 Header */
+@media screen and (min-height:667px){
+    .full-header{
+         font-size:20px;
+    }
+
+    img#headshot-image {
+        width: 10em;
+        height: 10em;
+    }
+
+}
+/*iPhone 6 Landscape Header */
+@media screen and (height:375px){
+    .full-header {
+        font-size:20px;
+    }
+   
+}
+/*iPhone 6 Plus Header */
+@media screen and (min-height:730px){
+    .full-header {
+        font-size:22px;
+    }
+    p#front-decoration {
+        margin-bottom:.5em;
+    }
+    h1#hero-text {
+        margin-top:0em;
+    }
+
+    img#headshot-image {
+        width: 10em;
+        height: 10em;
+    }
+    p#full-hero-text {
+        margin-top:1em;
+        text-shadow: 2px 2px #000000;
+    }
+ 
+}
+/*iPhone 6 Plus Landscape Header */
+@media screen and (height:414px){
+    .full-header {
+        font-size:22px;
+    }
+}
+
+/*Samsung Galaxy SIII Landscape*/
+@media screen and (height:360px){
+    .full-header {
+        font-size:20px;
+    }
+}
+
+/*Nexus 6P Landscape */
+@media screen and (min-height:412px) and (min-width:732px){
+    .full-header {
+        font-size:22px;
+    }
+}
+
+/*********************************************/
+/* Begin Tablet Header Styles */
+/*********************************************/
+
+/*Portrait*/
+@media screen and (min-width:768px) and (min-height:1024px){
+    .full-header {
+      font-size:24px;
+      align-items:center;
+      flex-direction:column;
+    }
+    
+    /* LOGO styles */
+    .site-logo a {
+	position: absolute;
+	z-index: 20;
+	top: 1.5em;
+	left: 1.5em;
+	display: block;
+	width: 4em;
+	height: 4em;
+	
+}
+    .site-firstletter {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 3.25em;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.3em;
+    }
+
+    /*main header styles */
+    p#front-decoration {
+        font-size:1.5em;
+        
+    }
+    h1#hero-text {
+        width:auto;
+        font-size:4em;
+        margin:.5em;
+    }
+
+    img#headshot-image {
+        margin-right:0;
+        align-self:center;
+    }
+    p#full-hero-text {
+        max-width:90vw;
+        height:auto;
+        font-size:1.25em;
+        align-self:center;
+        margin:0;
+    }
+    .flex-container-nav {
+        flex-direction:row;
+        align-self:center;
+    }
+    .nav-button {
+        font-size:1.1em;
+    }   
+}
+
+/* Tablet Landscape Styles */
+
+@media screen and (min-height:768px) and (min-width:1024px){
+    .full-header {
+        font-size:24px;
+    }
+    p#front-decoration {
+        font-size:1.25em;
+    }
+    h1#hero-text {
+        width:auto;
+        font-size:4.5em;
+    }
+
+    p#full-hero-text {
+        max-width:90vw;
+        height:auto;
+        font-size:1.5em;
+        margin:1em .25em;
+        padding:0;
+    }
+    .flex-container-nav {
+        width:100%;
+        flex-direction:row;
+        margin-top:.25em;
+    }
+    .nav-button {
+        font-size:1.5em;
+        padding:.5em 0;
+        margin:0;
+    }
+}
+
+/*Laptop Screens (Small) */
+@media screen and (min-width:1200px) and (min-height:600px){
+      .full-header {
+        font-size:24px;
+    }
+    p#front-decoration {
+        font-size:1.25em;
+    }
+    h1#hero-text {
+        width:auto;
+        font-size:4.5em;
+    }
+
+    p#full-hero-text {
+        max-width:90vw;
+        height:auto;
+        font-size:1.5em;
+        margin:1em .25em;
+        padding:0;
+    }
+    .flex-container-nav {
+        width:100%;
+        flex-direction:row;
+        margin-top:.25em;
+    }
+    .nav-button {
+        font-size:1.5em;
+        padding:.5em 0;
+        margin:0;
+    }
+}
+
+/*Laptop Screens (Large) */
+
+@media screen and (min-width:1200px){
+}
