@@ -806,7 +806,7 @@ a:active {
 .site-branding {
     width:100vw;
     height:100vh;
-    background:#004459;
+    background:#004466;
 }
     .full-header {
         width:98%;
@@ -868,11 +868,11 @@ a:active {
             }
                 .nav-button {
                     background-color: #02FF57;
-                    color: #004459;
+                    color: #004466;
                     font-size:.75em;
                     
                     border-radius:5px;
-                    border:1px solid #004459;
+                    border:1px solid #004466;
                     
                     margin:1.5em 1.5em .5em 1.5em;
                     width:10em;

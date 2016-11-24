@@ -278,7 +278,7 @@ and open the template in the editor.
     }
     p#front-decoration {
         font-size:1em;
-        color:#004459;
+        color:#004466;
        
         margin:1em .5em 0 0;
         
@@ -290,7 +290,7 @@ and open the template in the editor.
         margin-bottom:.25em;
         width:auto;
         font-size:3em;
-        color:#004459;
+        color:#004466;
         align-self:center;
     }
     img#headshot-image {
@@ -303,7 +303,7 @@ and open the template in the editor.
         font-size:1.5em;
         font-weight:normal;
 
-        color:#004459;
+        color:#004466;
         align-self:center;
     }
     .flex-container-nav {
@@ -313,7 +313,7 @@ and open the template in the editor.
     .nav-button {
         font-size:1em;
         width:10em;
-        background-color:#004459;
+        background-color:#004466;
                     color: #c3ebfe;
 
     }
@@ -348,7 +348,7 @@ and open the template in the editor.
     }
     p#front-decoration {
         font-size:1.25em;
-        color:#004459;
+        color:#004466;
        
         margin:1em .5em 0 0;
         
@@ -360,7 +360,7 @@ and open the template in the editor.
         margin:0;
         width:auto;
         font-size:4em;
-        color:#004459;
+        color:#004466;
         align-self:center;
     }
     img#headshot-image {
@@ -373,7 +373,7 @@ and open the template in the editor.
         font-size:1.25em;
         font-weight:normal;
 
-        color:#004459;
+        color:#004466;
         align-self:center;
     }
     .flex-container-nav {
@@ -382,7 +382,7 @@ and open the template in the editor.
     .nav-button {
         font-size:1.25em;
         width:7em;
-        background-color:#004459;
+        background-color:#004466;
                     color: #c3ebfe;
     }
 }
