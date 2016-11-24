@@ -20,23 +20,23 @@ function meg_customize_register( $wp_customize ) {
 	 */
 	
 	// Create header background color setting
-	$wp_customize->add_setting( 'header_color', array(
-		'default' => '#000000',
-		'type' => 'theme_mod',
-		'sanitize_callback' => 'sanitize_hex_color',
-		'transport' => 'postMessage',
-	));
+//	$wp_customize->add_setting( 'header_color', array(
+//		'default' => '#000000',
+//		'type' => 'theme_mod',
+//		'sanitize_callback' => 'sanitize_hex_color',
+//		'transport' => 'postMessage',
+//	));
 	
 	// Add header background color control
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'header_color', array(
-				'label' => __( 'Header Background Color', 'meg' ),
-				'section' => 'colors',
-			)
-		)
-	);
+//	$wp_customize->add_control(
+//		new WP_Customize_Color_Control(
+//			$wp_customize,
+//			'header_color', array(
+//				'label' => __( 'Header Background Color', 'meg' ),
+//				'section' => 'colors',
+//			)
+//		)
+//	);
 	
 	// Add section to the Customizer
 	$wp_customize->add_section( 'meg-options', array(

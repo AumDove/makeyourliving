@@ -29,10 +29,7 @@
                 <header id="masthead" class="site-header" role="banner">
             <?php } ?>
             
-                       
-
-                <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?> >
-                        <?php // Display site icon or first letter as logo ?>	
+            <?php // Display site icon or first letter as logo ?>	
                          <div class="site-logo">
                                  <?php $site_title = get_bloginfo( 'name' ); ?>
                                  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -48,7 +45,10 @@
                                                  </div>
                                          <?php } ?>
                                  </a>
-                         </div><!-- .site-logo -->
+                         </div><!-- .site-logo -->                       
+
+                <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?> >
+                        
             
 
 			<?php
@@ -63,14 +63,14 @@
                                                  
 
                             <div class="flex-container-nav">    
-                                <button id="button-one" class="nav-button">Blog</button>
-                                <button id="button-two" class="nav-button">Contact</button>
+                                <a><button id="button-one" href="<?php echo site_url('/blog/'); ?>" class="nav-button" >Blog</button></a>
+                                <a><button id="button-two" href="<?php echo site_url('/blog/'); ?>" class="nav-button" >Contact</button></a>
                             </div>
                             
                         </div>       		
                         <?php else : ?>
                     <div class="reduced-header">
-                        
+
                     </div>
 			<?php
 			endif;

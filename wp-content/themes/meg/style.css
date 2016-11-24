@@ -806,6 +806,7 @@ a:active {
 .site-branding {
     width:100vw;
     height:100vh;
+    background:#004466;
 }
     .full-header {
         width:98%;
@@ -867,25 +868,21 @@ a:active {
             }
                 .nav-button {
                     background-color: #02FF57;
-                    color: #004459;
+                    color: #004466;
                     font-size:.75em;
-                    font-weight:bold;
+                    
                     border-radius:5px;
-                    border:1px solid #004459;
-                    text-transform:uppercase;
+                    border:1px solid #004466;
+                    
                     margin:1.5em 1.5em .5em 1.5em;
                     width:10em;
                     padding:1em 2em;
                 }
                 
 /* Begin Reduced Header Styles for anything but Front Page*/
-.reduced-header {
-    height: 3.5em;
-}
+
 @media screen and (min-width: 50em) {
-    .site-header {
-        min-height: 4em;
-    }
+   
 }
 /* Begin Logo Styles */
 
