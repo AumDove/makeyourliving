@@ -829,7 +829,7 @@ a:active {
             h1#hero-text {
                 font-family:'Economica', sans-serif;
                 font-weight: 500;
-                color: #02FF57;
+                color: #02F26C;
                 font-size:2.5em;;
                 letter-spacing:.05em;
                 margin-top:0;
@@ -867,16 +867,16 @@ a:active {
                 justify-content: space-around;
             }
                 .nav-button {
-                    background-color: #02FF57;
-                    color: #004466;
+                    background-color: #3F6608;
+                    color: #36012F;
                     font-size:.75em;
-                    
+                    letter-spacing:1px;
                     border-radius:5px;
                     border:1px solid #004466;
                     
-                    margin:1.5em 1.5em .5em 1.5em;
+                    margin:1.75em 1.5em .5em 1.5em;
                     width:10em;
-                    padding:1em 2em;
+
                 }
                 
 /* Begin Reduced Header Styles for anything but Front Page*/
