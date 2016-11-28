@@ -21,13 +21,13 @@ and open the template in the editor.
     
     #hero-text {
         order:2;  
-
+        font-size:.75em;
     }
     #headshot-image {
         order:3;
     }
     #full-hero-text {
-        font-size:1em;
+        font-size:.85em;
         order:4;
     }
     .flex-container-nav {
@@ -98,19 +98,32 @@ and open the template in the editor.
     .full-header{
          font-size:20px;
     }
-
+    p#front-decoration {
+        order:1;
+    }
+    h1#hero-text{
+        order:2;
+    }
     img#headshot-image {
         width: 10em;
         height: 10em;
+        order:3;
     }
-
+    p#full-hero-text{
+        order:4;
+    }
+    .flex-container-nav {
+        order:5;
+    }
 }
 /*iPhone 6 Landscape Header */
 @media screen and (height:375px){
     .full-header {
         font-size:20px;
     }
-   
+    p#full-hero-text {
+        font-size: .8em;
+    }
 }
 /*iPhone 6 Plus Header */
 @media screen and (min-height:730px){
@@ -130,7 +143,7 @@ and open the template in the editor.
     }
     p#full-hero-text {
         margin-top:1em;
-        text-shadow: 2px 2px #000000;
+        text-shadow: .5px .5px #004466;
     }
  
 }
@@ -139,6 +152,10 @@ and open the template in the editor.
     .full-header {
         font-size:22px;
     }
+     p#full-hero-text {
+        font-size: .8em;
+    }
+   
 }
 
 /*Samsung Galaxy SIII Landscape*/
