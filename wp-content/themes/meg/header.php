@@ -68,14 +68,9 @@
                             </div>
                             
                         </div>       		
-                        <?php else : ?>
-                    <div class="reduced-header">
-
-                    </div>
-			<?php
-			endif;
-
-		?>	
+                        <?php endif; ?>
+       
+		
 		</div><!-- .site-branding -->
 
            
