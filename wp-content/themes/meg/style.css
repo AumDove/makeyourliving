@@ -684,14 +684,16 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
+/*a {
 	color: #000;
 }
 
 a:visited {
 	color: #000;
 }
-
+a:visited .nav-button{
+    color#e8fbfd;
+}
 a:hover,
 a:focus,
 a:active {
@@ -705,7 +707,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
-}
+}*/
 
 /*--------------------------------------------------------------
 ## Menus
@@ -902,20 +904,24 @@ a:active {
 
                     background-color: #176BA7;
                     color: #e8fbfd;
-                    font-size:1.15em;
+                    font-size:1.25em;
                     font-family: 'Nothing You Could Do', cursive;
                     letter-spacing:1.25px;
                     border-radius:5em;
                     border:1px solid #004466;
-                    padding:.15em 0;
-                    margin:.5em 1.5em;
+                    padding:.15em .5em;
+                    margin:.5em .5em;
                     width:7em;
                     height:2em;
-
-
-
+                    text-align:center;
+                    text-decoration:none;
                 }
-                
+                    .nav-button a:hover a:focus{
+                        color:#fff;
+                    }
+                    .nav-button a:visited {
+                        color:#e8fbfd;
+                    }
 /* Begin Reduced Header Styles for anything but Front Page*/
 
 @media screen and (min-width: 50em) {

@@ -40,6 +40,9 @@ and open the template in the editor.
     .full-header {
         font-size:18px;
     }
+    .nav-button{
+        width:10em;
+    }
 }
 /*iPhone 4 & 5 Landscape Header */
 @media screen and (min-height:320px) and (min-width:480px){
@@ -229,9 +232,9 @@ and open the template in the editor.
         flex-direction:row;
         align-self:center;
     }
-    .nav-button {
-        font-size:1.1em;
-    }   
+   .nav-button{
+        width:15em;
+    }  
 }
 
 /* Tablet Landscape Styles */
