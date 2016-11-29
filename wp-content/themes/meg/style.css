@@ -900,7 +900,9 @@ a:active {
                 justify-content: center;
                 margin-left:.15em;
             }
-                .nav-button {
+                
+                a#button-one.nav-button,
+                a#button-two.nav-button {
 
                     background-color: #176BA7;
                     color: #e8fbfd;
