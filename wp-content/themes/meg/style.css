@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+
 # Normalize
 # Typography
 # Elements
@@ -34,6 +35,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+
+## Color and Font
+
 # Header
 # Widgets
 # Content
@@ -680,14 +684,16 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
+/*a {
 	color: #000;
 }
 
 a:visited {
 	color: #000;
 }
-
+a:visited .nav-button{
+    color#e8fbfd;
+}
 a:hover,
 a:focus,
 a:active {
@@ -701,7 +707,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
-}
+}*/
 
 /*--------------------------------------------------------------
 ## Menus
@@ -794,7 +800,35 @@ a:active {
 .site-footer:after {
 	clear: both;
 }
+/*--------------------------------------------------------------
+## Color and Font
+--------------------------------------------------------------*/
+/*
+    Logo Background: #548DAD;
+    Logo Font Color: #DAD7D7;
 
+    --MOBILE-- 
+
+    Background: #e8fbfd;
+    Front Decoration: #176BA7;
+    Hero Text: #DE5E00;
+    Full Hero Text: #004459;
+    Buttons:
+        Background: #176BA7;
+        Font Family: ;
+        Font Color: #e8fbfd;
+    
+    --LAPTOP / DESKTOP--
+    Background: #;
+    Front Decoration: #;
+    Hero Text: #;
+    Full Hero Text: #;
+    Buttons:
+        Background: #;
+        Font Family: ;
+        Font Color: #;
+
+*/
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -806,7 +840,7 @@ a:active {
 .site-branding {
     width:100vw;
     height:100vh;
-    background:#004466;
+    background:#e8fbfd;
 }
     .full-header {
         width:98%;
@@ -819,32 +853,31 @@ a:active {
         flex-direction:column;
     }
         p#front-decoration {
-            color: lightgray;
+            color: #176BA7;
             font-family: 'Courier New', sans-serif;
             margin-bottom: 1em;
-            
-
         }
-
             h1#hero-text {
-                font-family:'Economica', sans-serif;
+                font-family: 'Nothing You Could Do', cursive;
                 font-weight: 500;
-                color: #02FF57;
+                font-style: italic;
+                color: #DE5E00;
                 font-size:2.5em;;
                 letter-spacing:.05em;
                 margin-top:0;
-                text-shadow: 1px 1px #000000;
+                margin-left: .5em;
+                text-shadow: .5px .5px rgba(113, 57, 15, 0.89);
                 
 /*                order:2;*/
             }
             p#full-hero-text {
-                color:lightgray;
+                color: #18AEBC;
                 font-family: 'Fira Sans', sans-serif;
-                font-size:1em;
-                padding:.5em;
-                margin:.5em .5em;
-                text-shadow: 1px 1px #000000;
-                text-align:center;
+                font-size: 1em;
+                padding: .5em;
+                margin: .5em .5em;
+                text-shadow: .5px .5px #004466;
+                text-align: center;
 
 /*                order:4;*/
  
@@ -864,22 +897,33 @@ a:active {
                 
 /*                order:5;*/
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
+                margin-left:.15em;
             }
-                .nav-button {
-                    background-color: #02FF57;
-                    color: #004466;
-                    font-size:1em;
-                    font-family: 'Fira Sans', sans-serif;
-                    border-radius:5px;
+                
+                a#button-one.nav-button,
+                a#button-two.nav-button {
+
+                    background-color: #176BA7;
+                    color: #e8fbfd;
+                    font-size:1.25em;
+                    font-family: 'Nothing You Could Do', cursive;
+                    letter-spacing:1.25px;
+                    border-radius:5em;
                     border:1px solid #004466;
+                    padding:.15em .5em;
+                    margin:.5em .5em;
+                    width:7em;
+                    height:2em;
                     text-align:center;
                     text-decoration:none;
-                    margin:.5em 1.5em .5em 1.5em;
-                    width:10em;
-                    padding:.5em 1em;
                 }
-                
+                    .nav-button a:hover a:focus{
+                        color:#fff;
+                    }
+                    .nav-button a:visited {
+                        color:#e8fbfd;
+                    }
 /* Begin Reduced Header Styles for anything but Front Page*/
 
 @media screen and (min-width: 50em) {
