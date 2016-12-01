@@ -21,10 +21,11 @@ get_header(); ?>
         $image_1 = get_field('image_1');
         $image_2 = get_field('image_2');
         $image_3 = get_field('image_3');
+        $size = "large";
     
     ?>
-    <div class="featured-work">   
-        <div class="featured-work-sidebar">
+    <div class="single-flexbox-featured">   
+        <div class="featured-work-meta">
             <h2><?php the_title(); ?></h2>
             <h5><?php echo $project; ?></h5>
             <h6>Client: <?php echo $client; ?></h6>
@@ -36,14 +37,20 @@ get_header(); ?>
         </div>
 
         <div class="featured-work-image">
+            <figure class="featured-image">
             <?php if($image_1){ ?>
-                <img src="<?php echo $image_1; ?>" />
+                <?php echo wp_get_attachment_image($image_1, $size); ?>
+            </figure>
              <?php } ?>
+            <figure class="featured-image">
              <?php if($image_2){ ?>
-                <img src="<?php echo $image_2; ?>" />
+                <?php echo wp_get_attachment_image($image_2, $size); ?>
+            </figure>
             <?php } ?>
+            <figure class="featured-image">
             <?php  if($image_3){ ?>
-                <img src="<?php echo $image_3; ?>" />
+                <?php echo wp_get_attachment_image($image_3, $size); ?>
+            </figure>
             <?php } ?>
         </div>
 
