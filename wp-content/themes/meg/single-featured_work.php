@@ -15,7 +15,7 @@ get_header(); ?>
 
     <?php while ( have_posts() ) : the_post(); 
             
-        $work = get_field('work');
+        $project = get_field('project');
         $client = get_field('client');
         $link = get_field('live_site_link');
         $image_1 = get_field('image_1');
@@ -26,7 +26,7 @@ get_header(); ?>
     <div class="featured-work">   
         <div class="featured-work-sidebar">
             <h2><?php the_title(); ?></h2>
-            <h5><?php echo $work; ?></h5>
+            <h5><?php echo $project; ?></h5>
             <h6>Client: <?php echo $client; ?></h6>
 
             <?php the_content(); ?>
@@ -35,14 +35,14 @@ get_header(); ?>
 
         </div>
 
-        <div class="featured-work-images">
+        <div class="featured-work-image">
             <?php if($image_1){ ?>
                 <img src="<?php echo $image_1; ?>" />
-            <?php } ?>
-            <?php if($image_2){ ?>
+             <?php } ?>
+             <?php if($image_2){ ?>
                 <img src="<?php echo $image_2; ?>" />
             <?php } ?>
-            <?php if($image_3){ ?>
+            <?php  if($image_3){ ?>
                 <img src="<?php echo $image_3; ?>" />
             <?php } ?>
         </div>
