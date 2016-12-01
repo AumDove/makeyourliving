@@ -46,7 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         ## Posts and pages
         ## Asides
 	## Comments
-
+        ## Featured Work
 # Infinite scroll
 # Media
 	## Captions
@@ -1966,6 +1966,21 @@ a:active {
 	font-style: italic;
 	padding-bottom: .4em;
 }
+/*--------------------------------------------------------------
+## Featured Work
+--------------------------------------------------------------*/
+div.featured-work-sidebar {
+    
+}
+div.featured-work-image {
+    
+}
+div.featured-work-image img {
+    display:block;
+    margin-bottom: 2.5em;
+    border:1px solid #000;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
