@@ -34,7 +34,7 @@ get_header(); ?>
 
         </div>
 
-        <div class="featured-work-images">
+        <div class="featured-work-image">
             <?php if($image_1){ ?>
                 <img src="<?php echo $image_1; ?>" />
             <?php } ?>
