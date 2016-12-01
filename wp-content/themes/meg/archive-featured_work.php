@@ -52,10 +52,13 @@ get_header(); ?>
                             ?>
                         </a>
                     </div>
+                    
+                    
+                    
                         <?php
 			endwhile; // End of the loop.
 			?>
-
+                   <?php meg_paging_nav();?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

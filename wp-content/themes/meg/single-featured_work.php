@@ -26,7 +26,7 @@ get_header(); ?>
     ?>
     <div class="single-flexbox-featured">   
         <div class="featured-work-meta">
-            <h2><?php the_title(); ?></h2>
+            <h3><?php the_title(); ?></h3>
             <h5><?php echo $project; ?></h5>
             <h6>Client: <?php echo $client; ?></h6>
 
