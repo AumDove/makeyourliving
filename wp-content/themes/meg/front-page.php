@@ -26,7 +26,7 @@ get_header(); ?>
             
                 <li class="individual-frontpage-featured">
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    <?php echo wp_get_attachment_image($image_1, $size); ?>
+                    <figure><?php echo wp_get_attachment_image($image_1, $size); ?></figure>
                     <h5><?php echo $project; ?></h5>
                     <p><a href="<?php echo $link; ?>" target="_blank">Live Site Link</a></p>
                     <h6>Client: <?php echo $client; ?></h6>
@@ -36,20 +36,38 @@ get_header(); ?>
                         <a href="<?php echo esc_url ( get_permalink() ); ?>" rel="bookmark">
                             <?php
                                     printf(
-
                                             wp_kses( __( 'Project Page %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
                                             the_title( '<span class="screen-reader-text">"', '"</span>', false )
                                     );
                             ?>
                         </a>
                     </div>
+                    
+                    <div class="featured-archive-button">
+                        
+                        
+                    </div>
+                   
                 </li>
                 
                 <?php endwhile; //end of the loop. ?>
                 <?php wp_reset_query(); //resets the altered query back to original. ?>
                 
         </ul>
-            
+            <div class="all-work">
+                <h4>Check Out More Projects</h4>
+                <div class="continue-reading">
+                    
+                    <a href="/archives/featured-work" rel="bookmark">
+                        <?php
+                                printf(
+                                        wp_kses( __( 'All Work %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
+                                        the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                                );
+                        ?>
+                    </a>
+                </div>
+            </div>
     </main><!-- #main -->
 </div><!-- #primary -->
 <?php

@@ -1974,7 +1974,7 @@ a:active {
 }
 h4.front-headline {
     font-family:'Merriweather', sans-serif;
-    font-size:1.5em;
+    font-size:2em;
     color:#004466;
     text-align:center;
 }
@@ -1982,31 +1982,38 @@ h4.front-headline {
 ul.frontpage-flexbox-featured {
     display:flex;
     flex-direction:column;
+    
     list-style: none;
     margin-left:0;
     padding:.15em;
 }
     li.individual-frontpage-featured {
-
-
         padding-bottom:1.5em;
+        display:flex;
+        flex-direction:column;
     }
+    
         li.individual-frontpage-featured h3 {
             text-align: center;
             font-size:1.75em;
             margin-top: .75em;
             margin-bottom:1em;
+            align-self:center;
         }
             li.individual-frontpage-featured h3 a {
                 text-decoration:none;
                 font-family: 'Nothing You Could Do', cursive;
+                align-self:center;
             }
-
+            li.individual-frontpage-featured figure {
+                align-self:center;
+            }
         li.individual-frontpage-featured p a{
             font-family: 'Indie Flower', cursive;
             font-size:1.2em;
             margin-left: .5em;
             text-decoration: none;
+            align-self:center;
         }
         li.individual-frontpage-featured h5 {
             font-family: 'Indie Flower', cursive;
@@ -2014,16 +2021,20 @@ ul.frontpage-flexbox-featured {
             color:#176BA7;
             padding:0;
             margin-top:0;
+            align-self:center;
+            text-align:center;
         }
         li.individual-frontpage-featured h6 {
             font-family: 'Indie Flower', cursive;
             font-size: 1em;
             color:#176BA7;
             margin-top:.15em;
+            align-self:center;
         }
         li.individual-frontpage-featured p {
             font-size:.85em;
             padding-left:.25em;
+            align-self:center;
         }
 div.featured-work-meta {
     
