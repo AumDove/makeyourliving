@@ -2113,14 +2113,21 @@ span#noticed {
 .back-home-button::after {
     border-bottom:none;
 }
- figure.single-image img{
-        margin-top:0;
-        margin-bottom: 3em;
-        border:1px solid #004466;
-
-    }
+figure.single-image img{
+    margin-top:0;
+    margin-bottom: 3em;
+    border:1px solid #004466;
+}
+.all-work p,
+.contact-section p,
+.blog-button p{
+    text-align: justify;
+    margin:2em .5em;
+    line-height:1.65em;
+    letter-spacing: .35px;
+}
 /*Archives Featured*/
-@media screen and (min-width:770px) {
+@media screen and (min-width:45em) {
     #front.site-main {
         max-width:85%;
         margin: 1em auto;
@@ -2199,7 +2206,7 @@ span#noticed {
 }
 @media screen and (min-width:1200px) {
     .single-page {
-        max-width:85%;
+        max-width:75%;
         margin: 1em auto;
         font-size:1em;
         line-height:2em;
