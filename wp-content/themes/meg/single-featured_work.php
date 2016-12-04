@@ -27,30 +27,30 @@ get_header(); ?>
     <div class="single-flexbox-featured">   
         <div class="featured-work-meta">
             <h3><?php the_title(); ?></h3>
-                <img class="mobile-single-featured"<?php echo wp_get_attachment_image($image_1, $size); ?>
             
-            
+            <img class="mobile-single-featured"<?php echo wp_get_attachment_image($image_1, $size); ?>
+
             <h6><span class="project-metadata-header">Project:</span> <?php echo $project; ?></h6>
             <h6><span class="project-metadata-header">Client: </span><?php echo $client; ?></h6>
 
-            <?php the_content(); ?>
+            <p><?php the_content(); ?></p>
             
             <p><a href="<?php echo $link; ?>" target="_blank">Live Site Link</a></p>
 
         </div>
 
         <div class="featured-work-image">
-            <figure class="featured-image">
+            <figure class="single-image">
             <?php if($image_1){ ?>
                 <?php echo wp_get_attachment_image($image_1, $size); ?>
             </figure>
              <?php } ?>
-            <figure class="featured-image">
+            <figure class="single-image">
              <?php if($image_2){ ?>
                 <?php echo wp_get_attachment_image($image_2, $size); ?>
             </figure>
             <?php } ?>
-            <figure class="featured-image">
+            <figure class="single-image">
             <?php  if($image_3){ ?>
                 <?php echo wp_get_attachment_image($image_3, $size); ?>
             </figure>
