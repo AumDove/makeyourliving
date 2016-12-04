@@ -2048,9 +2048,18 @@ div.featured-work-image img {
     border:1px solid #000;
 }
 @media screen and (min-width:750px) {
+    
+    
+    li.individual-frontpage-featured h3 a {
+        font-size:1.25em;
+    }
+    
+    
+    
     ul.frontpage-flexbox-featured{
         flex-direction:row;
     }
+    
 }
 /*--------------------------------------------------------------
 # Infinite scroll
