@@ -2022,15 +2022,7 @@ ul.frontpage-flexbox-featured {
             text-decoration: none;
             align-self:center;
         }
-        li.individual-frontpage-featured h5 {
-            font-family: 'Indie Flower', cursive;
-            font-size:1.25em;
-            color:#176BA7;
-            padding:0;
-            margin-top:0;
-            align-self:center;
-            text-align:center;
-        }
+        
         li.individual-frontpage-featured h6 {
             font-family: 'Indie Flower', cursive;
             font-size: 1em;
@@ -2048,7 +2040,6 @@ ul.frontpage-flexbox-featured {
 div.featured-work-image img {
     display:block;
     margin-bottom: 2.5em;
-
 }
 span#noticed {
     font-weight:bold;
