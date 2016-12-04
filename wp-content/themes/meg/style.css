@@ -2047,7 +2047,11 @@ div.featured-work-image img {
     margin-bottom: 2.5em;
     border:1px solid #000;
 }
-
+@media screen and (min-width:750px) {
+    ul.frontpage-flexbox-featured{
+        flex-direction:row;
+    }
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
