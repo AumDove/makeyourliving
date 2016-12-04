@@ -684,20 +684,20 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-/*a {
-	color: #000;
+a {
+	color: #004466;
 }
 
 a:visited {
-	color: #000;
+	color: #004466;
 }
 a:visited .nav-button{
-    color#e8fbfd;
+    color:#e8fbfd;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #000;
+	color: #004466;
 }
 
 a:focus {
@@ -707,7 +707,7 @@ a:focus {
 a:hover,
 a:active {
 	outline: 0;
-}*/
+}
 
 /*--------------------------------------------------------------
 ## Menus
@@ -1978,7 +1978,7 @@ h4.front-headline {
     color:#004466;
     text-align:center;
 }
-
+/* Front Page */
 ul.frontpage-flexbox-featured {
     display:flex;
     flex-direction:column;
@@ -2011,7 +2011,7 @@ ul.frontpage-flexbox-featured {
         li.individual-frontpage-featured p a{
             font-family: 'Indie Flower', cursive;
             font-size:1.2em;
-            margin-left: .5em;
+            margin-left: 0em;
             text-decoration: none;
             align-self:center;
         }
@@ -2035,6 +2035,7 @@ ul.frontpage-flexbox-featured {
             font-size:.85em;
             padding-left:.25em;
             align-self:center;
+            letter-spacing:.1em;
         }
 div.featured-work-meta {
     
@@ -2045,9 +2046,85 @@ div.featured-work-image {
 div.featured-work-image img {
     display:block;
     margin-bottom: 2.5em;
-    border:1px solid #000;
-}
 
+}
+span#noticed {
+    font-weight:bold;
+    font-style:italic;
+    color:#DE5E00;
+}
+span.project-metadata-header {
+        
+}
+/*Single Featured*/
+.featured-work-meta h3{
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size:1.75em;
+    color:#004466;
+    margin-top: .75em;
+    margin-bottom:1em;
+    align-self:center;
+}
+.featured-work-meta h5 {
+    font-family: 'Indie Flower', cursive;
+    font-size:1.25em;
+    color:#176BA7;
+    padding:0;
+    margin-top:0;
+    align-self:center;
+    text-align:center;
+}
+.featured-work-meta h6 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1em;
+    color:#176BA7;
+    margin-top:.15em;
+    align-self:center;
+    text-align: center;
+}
+.featured-work-meta p {
+    font-size:1.25em;
+    line-height:1.75em;
+    padding-left:.25em;
+    align-self:center;
+    letter-spacing:.5px;
+}
+.featured-work-meta p a {
+    font-family: 'Indie Flower', cursive;
+    font-size:1.2em;
+ 
+    text-decoration: none;
+    align-self:center;
+    text-align: center;
+}
+.back-home-button {
+    margin-top:3em;
+    
+}
+.back-home-button::after {
+    border-bottom:none;
+}
+/*Archives Featured*/
+@media screen and (min-width:750px) {
+    
+    li.individual-frontpage-featured {
+        padding:0 1.25em;
+    }
+    li.individual-frontpage-featured h3 a {
+        font-size:.75em;
+    }
+    li.individual-frontpage-featured img {
+        width:30em;
+    }
+
+    ul.frontpage-flexbox-featured{
+        flex-direction:row;
+    }
+    .mobile-single-featured {
+        display:none;
+    }
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
