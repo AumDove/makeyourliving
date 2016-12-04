@@ -12,7 +12,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="front" class="site-main" role="main">
-    <h4 class="front-headline">Featured Work</h4> 
+    <h4 id="skip-to-featured" class="front-headline">Featured Work</h4> 
         <ul class="frontpage-flexbox-featured">
             <?php query_posts('posts_per_page=3&post_type=featured_work'); ?>
                 <?php while ( have_posts() ): the_post();
@@ -26,27 +26,8 @@ get_header(); ?>
             
                 <li class="individual-frontpage-featured">
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    <figure><?php echo wp_get_attachment_image($image_1, $size); ?></figure>
-<!--                    <h5><?php echo $project; ?></h5>-->
-                    <p><a href="<?php echo $link; ?>" target="_blank">Live Site Link</a></p>
-<!--                    <h6>Client: <?php echo $client; ?></h6>-->
-
-                    
-                    <div class="continue-reading front-excerpt">
-                        <a href="<?php echo esc_url ( get_permalink() ); ?>" rel="bookmark">
-                            <?php
-                                    printf(
-                                            wp_kses( __( 'Project Page %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
-                                            the_title( '<span class="screen-reader-text">"', '"</span>', false )
-                                    );
-                            ?>
-                        </a>
-                    </div>
-                    
-                    <div class="featured-archive-button">
-                        
-                        
-                    </div>
+                    <figure><a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image_1, $size); ?></a></figure>
+              
                    
                 </li>
                 
@@ -69,10 +50,10 @@ get_header(); ?>
                     </a>
                 </div>
             </div>
-            <div class="contact-section">
+            <div id="skip-to-contact" class="contact-section">
                 <h4 class="front-headline">Contact</h4>
               
-                <p>Let's begin the process of getting your website live and out in the wild! Since my skillset is varied, I am flexible to create many types of full-scale websites, one-page layouts or even blog sites. What this means for you is that I can accommodate the many different needs a small business or freelancer needs to get their business <big><strong><em>noticed</em></strong></big> without spending a fortune in valuable time and money. </p>
+                <p>Let's begin the process of getting your website live and out in the wild! Since my skillset is varied, I am flexible to create many types of full-scale websites, one-page layouts or even blog sites. What this means for you is that I can accommodate the many different needs a small business or freelancer needs to get their business <span id="noticed">noticed</span> without spending a fortune in valuable time and money. </p>
                     
 
                 <div class="continue-reading">

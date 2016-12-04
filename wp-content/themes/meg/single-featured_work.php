@@ -27,8 +27,11 @@ get_header(); ?>
     <div class="single-flexbox-featured">   
         <div class="featured-work-meta">
             <h3><?php the_title(); ?></h3>
-            <h5><?php echo $project; ?></h5>
-            <h6>Client: <?php echo $client; ?></h6>
+                <img class="mobile-single-featured"<?php echo wp_get_attachment_image($image_1, $size); ?>
+            
+            
+            <h6><span class="project-metadata-header">Project:</span> <?php echo $project; ?></h6>
+            <h6><span class="project-metadata-header">Client: </span><?php echo $client; ?></h6>
 
             <?php the_content(); ?>
             
@@ -56,7 +59,27 @@ get_header(); ?>
 
     </div> 
 <?php endwhile; // End of the loop. ?>
-
+            <div class="continue-reading front-excerpt">
+                         <a href="/archives/featured-work" rel="bookmark">
+                            <?php
+                                    printf(
+                                            wp_kses( __( 'Back to <br> Archive %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
+                                            the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                                    );
+                            ?>
+                        </a>
+                    </div>
+<div class="continue-reading back-home-button">
+                         <a href="/" rel="bookmark">
+                             
+                            <?php
+                                    printf(
+                                            wp_kses( __( 'Back Home %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
+                                            the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                                    );
+                            ?>
+                        </a>
+                    </div>
         </main><!-- #main -->
     </div><!-- #primary -->
 

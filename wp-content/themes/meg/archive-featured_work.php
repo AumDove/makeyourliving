@@ -24,24 +24,24 @@ get_header(); ?>
                         
                         <div class="individual-frontpage-featured">   
                             <div class="featured-work-meta">
-                                <h2><?php the_title(); ?></h2>
+                                <h3><?php the_title(); ?></h3>
                                  <div class="featured-work-image">
                                 <figure class="featured-image">
                                 <?php if($image_1){ ?>
                                     <?php echo wp_get_attachment_image($image_1, $size); ?>
                                 </figure>
                                  <?php } ?>
-
+                                     
                                 </div>
-                                <h5><?php echo $project; ?></h5>
-                                <h6>Client: <?php echo $client; ?></h6>
-
+                                <h6><span class="project-metadata-header">Project:</span> <?php echo $project; ?></h6>
+                                <h6><span class="project-metadata-header">Client: </span><?php echo $client; ?></h6>
+                                <?php the_excerpt(); ?>
                                 <p><a href="<?php echo $link; ?>" target="_blank">Live Site Link</a></p>
 
                             </div>
                         </div> 
 
-                        <?php the_excerpt(); ?>
+                        
                         <div class="continue-reading front-excerpt">
                         <a href="<?php echo esc_url ( get_permalink() ); ?>" rel="bookmark">
                             <?php
@@ -53,11 +53,22 @@ get_header(); ?>
                         </a>
                     </div>
                     
-                    
+                     
                     
                         <?php
 			endwhile; // End of the loop.
 			?>
+                    <div class="continue-reading back-home-button">
+                         <a href="/" rel="bookmark">
+                             
+                            <?php
+                                    printf(
+                                            wp_kses( __( 'Back Home %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
+                                            the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                                    );
+                            ?>
+                        </a>
+                    </div>
                    <?php meg_paging_nav();?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
