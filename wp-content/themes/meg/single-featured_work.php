@@ -10,7 +10,7 @@
 
 get_header(); ?>
     <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
+        <main id="main" class="site-main single-page" role="main">
 
 
     <?php while ( have_posts() ) : the_post(); 
@@ -24,33 +24,36 @@ get_header(); ?>
         $size = "large";
     
     ?>
-    <div class="single-flexbox-featured">   
-        <div class="featured-work-meta">
-            <h3><?php the_title(); ?></h3>
-                <img class="mobile-single-featured"<?php echo wp_get_attachment_image($image_1, $size); ?>
+    <h3 class="single-title"><?php the_title(); ?></h3>
+            
+    <div class="single-flexbox-featured"> 
+        
+        <div class="single-work-meta">
             
             
-            <h6><span class="project-metadata-header">Project:</span> <?php echo $project; ?></h6>
+            <img class="mobile-single-featured"<?php echo wp_get_attachment_image($image_1, $size); ?>
+
+            <h6><span class="project-metadata-header">Project: </span> <?php echo $project; ?></h6>
             <h6><span class="project-metadata-header">Client: </span><?php echo $client; ?></h6>
 
-            <?php the_content(); ?>
+            <p class="single-content"><?php the_content(); ?></p>
             
             <p><a href="<?php echo $link; ?>" target="_blank">Live Site Link</a></p>
 
         </div>
 
-        <div class="featured-work-image">
-            <figure class="featured-image">
+        <div class="single-work-image">
+            <figure class="single-image">
             <?php if($image_1){ ?>
                 <?php echo wp_get_attachment_image($image_1, $size); ?>
             </figure>
              <?php } ?>
-            <figure class="featured-image">
+            <figure class="single-image">
              <?php if($image_2){ ?>
                 <?php echo wp_get_attachment_image($image_2, $size); ?>
             </figure>
             <?php } ?>
-            <figure class="featured-image">
+            <figure class="single-image">
             <?php  if($image_3){ ?>
                 <?php echo wp_get_attachment_image($image_3, $size); ?>
             </figure>
@@ -59,27 +62,42 @@ get_header(); ?>
 
     </div> 
 <?php endwhile; // End of the loop. ?>
-            <div class="continue-reading front-excerpt">
-                         <a href="/archives/featured-work" rel="bookmark">
+            <div class="single-button-container">
+                <div id="skip-to-contact" class="contact-section">
+                    <div class="continue-reading contact-me">
+
+                        <a href="mailto:hello@megzencoding.com?subject=Hey, Meg! What's the next step?">
                             <?php
                                     printf(
-                                            wp_kses( __( 'Back to <br> Archive %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
+                                            wp_kses( __( 'Contact Me', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
                                             the_title( '<span class="screen-reader-text">"', '"</span>', false )
                                     );
                             ?>
                         </a>
                     </div>
-<div class="continue-reading back-home-button">
-                         <a href="/" rel="bookmark">
-                             
-                            <?php
-                                    printf(
-                                            wp_kses( __( 'Back Home %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
-                                            the_title( '<span class="screen-reader-text">"', '"</span>', false )
-                                    );
-                            ?>
-                        </a>
-                    </div>
+                </div>
+                <div class="continue-reading front-excerpt">
+                             <a href="/archives/featured-work" rel="bookmark">
+                                <?php
+                                        printf(
+                                                wp_kses( __( 'Projects List %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
+                                                the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                                        );
+                                ?>
+                            </a>
+                        </div>
+                <div class="continue-reading back-home-button">
+                             <a href="/" rel="bookmark">
+
+                                <?php
+                                        printf(
+                                                wp_kses( __( 'Back Home %s', 'meg' ), array( 'span' => array( 'class' => array() ) ) ),
+                                                the_title( '<span class="screen-reader-text">"', '"</span>', false )
+                                        );
+                                ?>
+                            </a>
+                </div>
+            </div>
         </main><!-- #main -->
     </div><!-- #primary -->
 

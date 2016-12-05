@@ -832,15 +832,12 @@ a:active {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site-header {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-}
+
 .site-branding {
     width:100vw;
     height:100vh;
     background:#e8fbfd;
+    background-size: cover;
 }
     .full-header {
         width:98%;
@@ -1297,23 +1294,8 @@ a:active {
     font-size:.8em;
     line-height:1.6em;
 }
-@media screen and (min-width: 30em) {
-    .site-main {
-        margin: 1.8em;
-    }
-}
-@media screen and (min-width: 40em) {
-    .site-main {
-        font-size: 1em;
-    }
-}
 
-@media screen and (min-width: 57em) {
-    .site-main {
-        max-width: 45em;
-        margin: 1.8em auto;
-    }
-}
+
 /*--------------------------------------------------------------
 /* Indexes
 --------------------------------------------------------------*/
@@ -1970,8 +1952,18 @@ a:active {
 ## Featured Work
 --------------------------------------------------------------*/
 #front.site-main {
+    margin: 1.4em;
     font-size:18px;
+    line-height:1.6em;
 }
+ h3.single-title {
+    text-align: center;
+    font-family: 'Nothing You Could Do', cursive;
+    color:#004466;
+    margin-top: .75em;
+    margin-bottom:2em;
+    align-self:center;
+    }
 h4.front-headline {
     font-family:'Merriweather', sans-serif;
     font-size:2em;
@@ -2015,15 +2007,7 @@ ul.frontpage-flexbox-featured {
             text-decoration: none;
             align-self:center;
         }
-        li.individual-frontpage-featured h5 {
-            font-family: 'Indie Flower', cursive;
-            font-size:1.25em;
-            color:#176BA7;
-            padding:0;
-            margin-top:0;
-            align-self:center;
-            text-align:center;
-        }
+        
         li.individual-frontpage-featured h6 {
             font-family: 'Indie Flower', cursive;
             font-size: 1em;
@@ -2037,66 +2021,66 @@ ul.frontpage-flexbox-featured {
             align-self:center;
             letter-spacing:.1em;
         }
-div.featured-work-meta {
-    
-}
-div.featured-work-image {
-    
-}
+
 div.featured-work-image img {
     display:block;
     margin-bottom: 2.5em;
-
 }
 span#noticed {
     font-weight:bold;
     font-style:italic;
     color:#DE5E00;
 }
-span.project-metadata-header {
-        
-}
+.back-home-button::after,
+.front-blog::after{
+        border-bottom:none;
+    }
+    
 /*Single Featured*/
-.featured-work-meta h3{
+.featured-work-meta h3,
+.single-work-meta h3 {
     text-align: center;
     font-family: 'Nothing You Could Do', cursive;
-    font-size:1.75em;
+    font-size:2em;
     color:#004466;
     margin-top: .75em;
-    margin-bottom:1em;
+    margin-bottom:2em;
     align-self:center;
 }
-.featured-work-meta h5 {
-    font-family: 'Indie Flower', cursive;
-    font-size:1.25em;
+.featured-work-meta h6,
+.single-work-meta h6 {
+    font-size:1.15em;
     color:#176BA7;
     padding:0;
-    margin-top:0;
-    align-self:center;
+    margin-top:2em;
     text-align:center;
 }
-.featured-work-meta h6 {
-    font-family: 'Indie Flower', cursive;
-    font-size: 1em;
-    color:#176BA7;
-    margin-top:.15em;
-    align-self:center;
-    text-align: center;
-}
-.featured-work-meta p {
+    .featured-work-meta h6 span,
+    .single-work-meta h6 span {
+        font-size:1.25em;
+    }
+.featured-work-meta p,
+.single-work-meta p{
     font-size:1.25em;
     line-height:1.75em;
     padding-left:.25em;
     align-self:center;
     letter-spacing:.5px;
 }
-.featured-work-meta p a {
+.featured-work-meta p a,
+.single-work-meta p a {
     font-family: 'Indie Flower', cursive;
     font-size:1.2em;
  
     text-decoration: none;
     align-self:center;
     text-align: center;
+}
+.contact-me,
+.front-excerpt,
+.back-home-button{
+    margin-top:2em;
+    margin-bottom:2.5em;
 }
 .back-home-button {
     margin-top:3em;
@@ -2105,8 +2089,29 @@ span.project-metadata-header {
 .back-home-button::after {
     border-bottom:none;
 }
+figure.single-image img{
+    margin-top:0;
+    margin-bottom: 3em;
+    border:1px solid #004466;
+}
+.all-work p,
+.contact-section p,
+.blog-button p{
+    text-align: justify;
+    margin:2em .5em;
+    line-height:1.65em;
+    letter-spacing: .35px;
+}
 /*Archives Featured*/
-@media screen and (min-width:750px) {
+@media screen and (min-width:45em) {
+    .single-page,
+    #front.site-main,
+    .site-main  {
+        max-width:85%;
+        margin: 1em auto;
+        font-size:1em;
+        line-height:2em;
+    }
     
     li.individual-frontpage-featured {
         padding:0 1.25em;
@@ -2121,8 +2126,80 @@ span.project-metadata-header {
     ul.frontpage-flexbox-featured{
         flex-direction:row;
     }
+    /*Single Featured*/
     .mobile-single-featured {
         display:none;
+    }
+    .single-flexbox-featured{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    h3.single-title {
+        text-align: center;
+        font-family: 'Nothing You Could Do', cursive;
+        font-size:2.25em;
+        color:#004466;
+        margin-top: .75em;
+        margin-bottom:2em;
+        align-self:center;
+    }
+    .single-work-meta {
+        width: 40%;
+        margin-top:1em;
+    }
+    .single-work-meta p {
+        font-size:1em;
+        line-height:2em;
+    }
+    .single-work-image {
+        width:50%;
+        margin-left:3em;
+        max-width:100%;
+
+    }
+    .single-content {
+        margin-top:2.5em;
+    }
+   
+    .single-button-container {
+        display:flex;
+        justify-content: space-around;
+        margin-top:3em;
+    }
+    .back-home-button {
+        margin-top:0em;
+    }
+    .contact-me,
+    .front-excerpt,
+    .back-home-button{
+        margin-top:0em;
+        margin-bottom:2.5em;
+    }
+    .contact-me::after,
+    .front-excerpt::after,
+    .back-home-button::after {
+        border-bottom:none;
+    }
+}
+@media screen and (min-width:74em) {
+    .single-page,
+    #front.site-main,
+    .site-main {
+        max-width:75%;
+        margin: 1em auto;
+        font-size:1em;
+        line-height:2em;
+    }
+}
+@media screen and (min-width:90em) {
+    .single-page,
+    #front.site-main,
+    .site-main{
+        max-width:65%;
+        margin: 1em auto;
+        font-size:1em;
+        line-height:2em;
     }
 }
 /*--------------------------------------------------------------
