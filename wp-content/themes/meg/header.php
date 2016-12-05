@@ -47,32 +47,29 @@
                                  </a>
                          </div><!-- .site-logo -->                       
 
-                <div class="site-branding"<?php if ( is_singular() ) { echo ' screen-reader-text '; } ?> >
-                        
-            
 
 			<?php
 			if ( is_front_page()) : ?>
+                        <div class="site-branding">
+                            <div class="full-header"><!-- .full-header -->
+                                 <p id="front-decoration">Hello, world!</p>
+                                <img id="headshot-image" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/> 
+                                <h1 id="hero-text">I&apos;m Meg ...</h1>
+                                <p id="full-hero-text">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p> 
 
-                        <div class="full-header"><!-- .full-header -->
-                             <p id="front-decoration">Hello, world!</p>
-                            <img id="headshot-image" src="<?php echo get_bloginfo('template_url') ?>/img/headshot-meg-two.jpg"/> 
-                            <h1 id="hero-text">I&apos;m Meg ...</h1>
-                            <p id="full-hero-text">I build functional, simple websites for people who are ready to get started on the web. Using developer skills, I help marketers and small business owners find their place on the web. Quickly.</p> 
-
-                                                 
-
-                            <div class="flex-container-nav">    
-                                <a id="button-one" href="#skip-to-featured" class="nav-button" >Work</a>
-                                <a id="button-two" href="#skip-to-contact" class="nav-button" >Contact</a>
-                            </div>
-                            
-                        </div>       		
-                        <?php endif; ?>
-       
+                                <div class="flex-container-nav">    
+                                    <a id="button-one" href="#skip-to-featured" class="nav-button" >Work</a>
+                                    <a id="button-two" href="#skip-to-contact" class="nav-button" >Contact</a>
+                                </div>
+                            </div>       
+                        </div><!--end full header section--> <!-- .site-branding -->
+                        
+                     <?php else : ?>
+                           <div class="reduced-header">
+                             <h1 id="hero-text">I&apos;m Meg ...</h1>
+                    <?php endif; ?><!--end reduced header section-->
 		
-		</div><!-- .site-branding -->
-
+                        
            
 	</header><!-- #masthead -->
 

@@ -922,7 +922,16 @@ a:active {
                         color:#e8fbfd;
                     }
 /* Begin Reduced Header Styles for anything but Front Page*/
-
+.reduced-header {
+    width: 100vw;
+    height: 4em;
+    background: #e8fbfd;
+    background-size: cover;
+}
+.reduced-header h1#hero-text {
+    padding-top:1rem;
+    text-align: center;
+}
 @media screen and (min-width: 50em) {
    
 }
@@ -2181,6 +2190,16 @@ figure.single-image img{
     .back-home-button::after {
         border-bottom:none;
     }
+    .reduced-header {
+        width: 100vw;
+        height: 6em;
+        background: #e8fbfd;
+        background-size: cover;
+    }
+    .reduced-header h1#hero-text {
+        padding-top:1rem;
+        text-align: center;
+    }
 }
 @media screen and (min-width:74em) {
     .single-page,
@@ -2466,11 +2485,11 @@ img.alignleft {
 --------------------------------------------------------------*/
 
 .site-footer {
-    padding: 6em 1em;
+    padding: 3em 1em;
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
-    color: #fff;
-    background-color: #000;
+    color:#e8fbfd;
+    background-color: #004466;
 }
 .site-footer a {
     color: #fff;
