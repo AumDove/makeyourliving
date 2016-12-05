@@ -47,7 +47,7 @@
                                  </a>
                          </div><!-- .site-logo -->                       
 
-                
+
 			<?php
 			if ( is_front_page()) : ?>
                         <div class="site-branding">
@@ -61,14 +61,14 @@
                                     <a id="button-one" href="#skip-to-featured" class="nav-button" >Work</a>
                                     <a id="button-two" href="#skip-to-contact" class="nav-button" >Contact</a>
                                 </div>
-
-                            </div><!--end full header section--> <!-- .site-branding -->
+                            </div>       
+                        </div><!--end full header section--> <!-- .site-branding -->
                         
-                        <?php else : ?>
-                           <div class="reduced-header <?php if ( is_singular() ) { echo ' screen-reader-text '; } ?> ">
-                                
+                     <?php else : ?>
+                           <div class="reduced-header">
+                             <h1 id="hero-text">I&apos;m Meg ...</h1>
                     <?php endif; ?><!--end reduced header section-->
-		</div>
+		
                         
            
 	</header><!-- #masthead -->
