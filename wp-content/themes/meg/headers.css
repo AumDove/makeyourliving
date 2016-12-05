@@ -7,9 +7,42 @@ and open the template in the editor.
     Created on : Nov 20, 2016, 5:04:48 PM
     Author     : dozyd
 */
+
+/*--------------------------------------------------------------
+## Color and Font
+--------------------------------------------------------------*/
+/*
+    Logo Background: #548DAD;
+    Logo Font Color: #DAD7D7;
+
+    --MOBILE-- 
+
+    Background: #e8fbfd;
+    Front Decoration: #176BA7;
+    Hero Text: #DE5E00;
+    Full Hero Text: #18AEBC;
+    Buttons:
+        Background: #176BA7;
+        Font Family: ;
+        Font Color: #e8fbfd;
+    
+    --LAPTOP / DESKTOP--
+    Background: #;
+    Front Decoration: #;
+    Hero Text: #;
+    Full Hero Text: #;
+    Buttons:
+        Background: #;
+        Font Family: ;
+        Font Color: #;
+
+*/
+
 /*iPhone 4 Header */
 @media screen and (width:320px){
-
+    .reduced-header-nav {
+        display:none;
+    }
     .full-header {
         font-size:16px;
     }

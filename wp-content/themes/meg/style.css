@@ -922,6 +922,12 @@ a:active {
                         color:#e8fbfd;
                     }
 /* Begin Reduced Header Styles for anything but Front Page*/
+.reduced-header {
+    width: 100vw;
+    height: 4em;
+    background: #e8fbfd;
+    background-size: cover;
+}
 
 @media screen and (min-width: 50em) {
    
