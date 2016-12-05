@@ -1294,23 +1294,8 @@ a:active {
     font-size:.8em;
     line-height:1.6em;
 }
-@media screen and (min-width: 30em) {
-    .site-main {
-        margin: 1.8em;
-    }
-}
-@media screen and (min-width: 40em) {
-    .site-main {
-        font-size: 1em;
-    }
-}
 
-@media screen and (min-width: 57em) {
-    .site-main {
-        max-width: 45em;
-        margin: 1.8em auto;
-    }
-}
+
 /*--------------------------------------------------------------
 /* Indexes
 --------------------------------------------------------------*/
@@ -2119,7 +2104,9 @@ figure.single-image img{
 }
 /*Archives Featured*/
 @media screen and (min-width:45em) {
-    #front.site-main {
+    .single-page,
+    #front.site-main,
+    .site-main  {
         max-width:85%;
         margin: 1em auto;
         font-size:1em;
@@ -2195,16 +2182,20 @@ figure.single-image img{
         border-bottom:none;
     }
 }
-@media screen and (min-width:1200px) {
-    .single-page {
+@media screen and (min-width:74em) {
+    .single-page,
+    #front.site-main,
+    .site-main {
         max-width:75%;
         margin: 1em auto;
         font-size:1em;
         line-height:2em;
     }
 }
-@media screen and (min-width:1600px) {
-    .single-page {
+@media screen and (min-width:90em) {
+    .single-page,
+    #front.site-main,
+    .site-main{
         max-width:65%;
         margin: 1em auto;
         font-size:1em;
