@@ -66,10 +66,7 @@
                         
                         <?php else : ?>
                            <div class="reduced-header <?php if ( is_singular() ) { echo ' screen-reader-text '; } ?> ">
-                               <nav class="reduced-header-nav">
-                                   <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
-                                   
-                               </nav>
+                                
                     <?php endif; ?><!--end reduced header section-->
 		</div>
                         
