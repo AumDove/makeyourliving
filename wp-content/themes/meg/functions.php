@@ -148,6 +148,31 @@ wp_enqueue_style( 'meg', get_template_directory_uri() . '/headers.css' );
 }
 add_action( 'wp_enqueue_scripts', 'media_devices_styles' );
 
+
+// Custom post types function
+function create_custom_post_types() {
+// create a featured work custom post type
+    
+    register_post_type('featured_work', 
+        array(
+            'labels' => array (
+                'name' => __( 'Featured Work' ),
+                'singular_name' => __( 'Project' )
+                ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array(
+                'slug' => 'featured-work'
+                ),
+            )
+    );
+
+}
+// Hook this custompost type function into the theme
+add_action( 'init', 'create_custom_post_types' );
+
+
+
 /**
  * Implement the Custom Header feature.
  */

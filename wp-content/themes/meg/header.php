@@ -63,8 +63,8 @@
                                                  
 
                             <div class="flex-container-nav">    
-                                <a id="button-one" href="<?php echo site_url('/blog/'); ?>" class="nav-button" >Blog</a>
-                                <a id="button-two" href="<?php echo site_url('/contact/'); ?>" class="nav-button" >Contact</a>
+                                <a id="button-one" href="#skip-to-featured" class="nav-button" >Work</a>
+                                <a id="button-two" href="#skip-to-contact" class="nav-button" >Contact</a>
                             </div>
                             
                         </div>       		
